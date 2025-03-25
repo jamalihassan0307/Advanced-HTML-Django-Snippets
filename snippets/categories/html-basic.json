@@ -25,6 +25,26 @@
         "description": "Complete HTML5 boilerplate with responsive meta tags",
         "scope": "text.html"
     },
+    "html_!": {
+        "prefix": "ah!",
+        "body": [
+            "<!DOCTYPE html>",
+            "<html lang=\"${1:en}\">",
+            "<head>",
+            "\t<meta charset=\"UTF-8\">",
+            "\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+            "\t<meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">",
+            "\t<title>${2:Document}</title>",
+            "\t<link rel=\"stylesheet\" href=\"${3:styles.css}\">",
+            "</head>",
+            "<body>",
+            "\t${0}",
+            "</body>",
+            "</html>"
+        ],
+        "description": "Complete HTML5 boilerplate with responsive meta tags",
+        "scope": "text.html"
+    },
     "html_link": {
         "prefix": "ahlink",
         "body": "<a href=\"${1:#}\" class=\"${2:link}\">${3:Link text}</a>",
