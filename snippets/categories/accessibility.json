@@ -1,0 +1,36 @@
+{
+    "skip_link": {
+        "prefix": "aaskip",
+        "body": "<a href=\"#main\" class=\"visually-hidden-focusable\">Skip to main content</a>",
+        "description": "Accessibility skip link",
+        "scope": "text.html"
+    },
+    "aria_alert": {
+        "prefix": "aaalert_aria",
+        "body": "<div role=\"alert\" aria-live=\"polite\">${1:Alert message}</div>",
+        "description": "Accessible alert notification",
+        "scope": "text.html"
+    },
+    "aria_dialog": {
+        "prefix": "aadialog",
+        "body": [
+            "<div role=\"dialog\" aria-labelledby=\"${1:dialogTitle}\" aria-describedby=\"${2:dialogDesc}\">",
+            "\t<h2 id=\"${1:dialogTitle}\">${3:Dialog Title}</h2>",
+            "\t<p id=\"${2:dialogDesc}\">${4:Dialog description}</p>",
+            "\t${5:content}",
+            "</div>"
+        ],
+        "description": "Accessible dialog with ARIA attributes",
+        "scope": "text.html"
+    },
+    "aria_tabpanel": {
+        "prefix": "aatab_aria",
+        "body": [
+            "<div role=\"tabpanel\" id=\"${1:panelId}\" aria-labelledby=\"${2:tabId}\">",
+            "\t${3:Tab panel content}",
+            "</div>"
+        ],
+        "description": "Accessible tab panel with ARIA attributes",
+        "scope": "text.html"
+    }
+} 
