@@ -10,30 +10,37 @@ Learn how to install and set up the extension in VS Code.
 
 ### 2. HTML Basic Elements
 ![HTML Basic Elements](gifs/ahtml-basic.gif)
+
 Quick access to common HTML elements with the `h` prefix.
 
 ### 3. Django Templates
 ![Django Templates](gifs/adjango-templates.gif)
+
 Django template tags and filters with the `ad` prefix.
 
 ### 4. Bootstrap Components
 ![Bootstrap Components](gifs/abootstrap-components.gif)
+
 Ready-to-use Bootstrap 5 components with the `b` prefix.
 
 ### 5. Form Elements
 ![Form Elements](gifs/aform.gif)
+
 HTML and Django form components with the `f` prefix.
 
 ### 6. Accessibility Features
 ![Accessibility Features](gifs/accessibility.gif)
+
 Accessibility-focused components with the `acc` prefix.
 
 ### 7. Layout Components
 ![Layout Components](gifs/alayout.gif)
+
 Structural and layout elements with the `l` prefix.
 
 ### 8. SEO Elements
 ![SEO Elements](gifs/aseo.gif)
+
 SEO and meta tags with the `seo` prefix.
 
 ## Features
