@@ -1,0 +1,73 @@
+{
+    "bootstrap_grid_responsive": {
+        "prefix": "aagrid",
+        "body": [
+            "<div class=\"container\">",
+            "\t<div class=\"row\">",
+            "\t\t<div class=\"col-12 col-md-6 col-lg-4\">",
+            "\t\t\t${1:Column 1 content}",
+            "\t\t</div>",
+            "\t\t<div class=\"col-12 col-md-6 col-lg-4\">",
+            "\t\t\t${2:Column 2 content}",
+            "\t\t</div>",
+            "\t\t<div class=\"col-12 col-md-6 col-lg-4\">",
+            "\t\t\t${3:Column 3 content}",
+            "\t\t</div>",
+            "\t</div>",
+            "</div>"
+        ],
+        "description": "Bootstrap 5 responsive grid system",
+        "scope": "text.html"
+    },
+    "html_section": {
+        "prefix": "aasection",
+        "body": [
+            "<section class=\"${1:section}\">",
+            "\t<h2>${2:Section Title}</h2>",
+            "\t${3:content}",
+            "</section>"
+        ],
+        "description": "HTML section with heading",
+        "scope": "text.html"
+    },
+    "html_header": {
+        "prefix": "aaheader",
+        "body": [
+            "<header class=\"${1:header}\">",
+            "\t<h1>${2:Page Title}</h1>",
+            "\t${3:content}",
+            "</header>"
+        ],
+        "description": "HTML header with content",
+        "scope": "text.html"
+    },
+    "html_footer": {
+        "prefix": "aafooter",
+        "body": [
+            "<footer class=\"${1:footer}\">",
+            "\t<p>&copy; ${2:2024} ${3:Your Company}. All rights reserved.</p>",
+            "\t${4:content}",
+            "</footer>"
+        ],
+        "description": "HTML footer with copyright",
+        "scope": "text.html"
+    },
+    "responsive_hero": {
+        "prefix": "aahero",
+        "body": [
+            "<div class=\"px-4 py-5 my-5 text-center\">",
+            "\t<img class=\"d-block mx-auto mb-4\" src=\"${1:logo.svg}\" alt=\"${2:Logo}\" width=\"${3:72}\" height=\"${4:57}\">",
+            "\t<h1 class=\"display-5 fw-bold\">${5:Hero Title}</h1>",
+            "\t<div class=\"col-lg-6 mx-auto\">",
+            "\t\t<p class=\"lead mb-4\">${6:Hero description text goes here}</p>",
+            "\t\t<div class=\"d-grid gap-2 d-sm-flex justify-content-sm-center\">",
+            "\t\t\t<button type=\"button\" class=\"btn btn-primary btn-lg px-4 gap-3\">${7:Primary Action}</button>",
+            "\t\t\t<button type=\"button\" class=\"btn btn-outline-secondary btn-lg px-4\">${8:Secondary Action}</button>",
+            "\t\t</div>",
+            "\t</div>",
+            "</div>"
+        ],
+        "description": "Bootstrap 5 hero section",
+        "scope": "text.html"
+    }
+} 
