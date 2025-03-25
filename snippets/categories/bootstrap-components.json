@@ -1,0 +1,159 @@
+{
+    "bootstrap_card": {
+        "prefix": "aacard",
+        "body": [
+            "<div class=\"card\">",
+            "\t<img src=\"${1:image.jpg}\" alt=\"${2:alt-text}\" class=\"card-img\">",
+            "\t<div class=\"card-body\">",
+            "\t\t<h3 class=\"card-title\">${3:Title}</h3>",
+            "\t\t<p class=\"card-text\">${4:Description}</p>",
+            "\t\t<a href=\"${5:#}\" class=\"btn btn-primary\">${6:Button}</a>",
+            "\t</div>",
+            "</div>"
+        ],
+        "description": "Bootstrap-style responsive card component",
+        "scope": "text.html"
+    },
+    "bootstrap_card_full": {
+        "prefix": "aacardplus",
+        "body": [
+            "<div class=\"card shadow-sm\">",
+            "\t<div class=\"card-header bg-${1:primary} text-white\">",
+            "\t\t<h5 class=\"card-title mb-0\">${2:Card Title}</h5>",
+            "\t</div>",
+            "\t<div class=\"card-body\">",
+            "\t\t<h6 class=\"card-subtitle mb-2 text-muted\">${3:Card Subtitle}</h6>",
+            "\t\t<p class=\"card-text\">${4:Card content goes here}</p>",
+            "\t\t<a href=\"${5:#}\" class=\"btn btn-${1:primary}\">${6:Learn More}</a>",
+            "\t</div>",
+            "\t<div class=\"card-footer text-muted\">",
+            "\t\t${7:Last updated 3 mins ago}",
+            "\t</div>",
+            "</div>"
+        ],
+        "description": "Bootstrap 5 card with header, body, and footer",
+        "scope": "text.html"
+    },
+    "bootstrap_navbar": {
+        "prefix": "aanavbar",
+        "body": [
+            "<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">",
+            "\t<div class=\"container-fluid\">",
+            "\t\t<a class=\"navbar-brand\" href=\"#\">${1:Logo}</a>",
+            "\t\t<button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNav\">",
+            "\t\t\t<span class=\"navbar-toggler-icon\"></span>",
+            "\t\t</button>",
+            "\t\t<div class=\"collapse navbar-collapse\" id=\"navbarNav\">",
+            "\t\t\t<ul class=\"navbar-nav\">",
+            "\t\t\t\t<li class=\"nav-item\">",
+            "\t\t\t\t\t<a class=\"nav-link active\" href=\"#\">${2:Home}</a>",
+            "\t\t\t\t</li>",
+            "\t\t\t\t<li class=\"nav-item\">",
+            "\t\t\t\t\t<a class=\"nav-link\" href=\"#\">${3:About}</a>",
+            "\t\t\t\t</li>",
+            "\t\t\t</ul>",
+            "\t\t</div>",
+            "\t</div>",
+            "</nav>"
+        ],
+        "description": "Responsive Bootstrap 5 navbar",
+        "scope": "text.html"
+    },
+    "bootstrap_navbar_search": {
+        "prefix": "aanavbarsearch",
+        "body": [
+            "<nav class=\"navbar navbar-expand-lg navbar-dark bg-${1:primary}\">",
+            "\t<div class=\"container-fluid\">",
+            "\t\t<a class=\"navbar-brand\" href=\"#\">${2:Brand}</a>",
+            "\t\t<button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSearch\" aria-controls=\"navbarSearch\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+            "\t\t\t<span class=\"navbar-toggler-icon\"></span>",
+            "\t\t</button>",
+            "\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSearch\">",
+            "\t\t\t<ul class=\"navbar-nav me-auto mb-2 mb-lg-0\">",
+            "\t\t\t\t<li class=\"nav-item\">",
+            "\t\t\t\t\t<a class=\"nav-link active\" href=\"#\">Home</a>",
+            "\t\t\t\t</li>",
+            "\t\t\t</ul>",
+            "\t\t\t<form class=\"d-flex\">",
+            "\t\t\t\t<input class=\"form-control me-2\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">",
+            "\t\t\t\t<button class=\"btn btn-outline-light\" type=\"submit\">Search</button>",
+            "\t\t\t</form>",
+            "\t\t</div>",
+            "\t</div>",
+            "</nav>"
+        ],
+        "description": "Bootstrap 5 navbar with search form",
+        "scope": "text.html"
+    },
+    "bootstrap_modal": {
+        "prefix": "aamodal",
+        "body": [
+            "<div class=\"modal fade\" id=\"${1:modalId}\" tabindex=\"-1\" aria-labelledby=\"${2:modalLabel}\" aria-hidden=\"true\">",
+            "\t<div class=\"modal-dialog\">",
+            "\t\t<div class=\"modal-content\">",
+            "\t\t\t<div class=\"modal-header\">",
+            "\t\t\t\t<h5 class=\"modal-title\" id=\"${2:modalLabel}\">${3:Modal Title}</h5>",
+            "\t\t\t\t<button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>",
+            "\t\t\t</div>",
+            "\t\t\t<div class=\"modal-body\">",
+            "\t\t\t\t${4:Modal content goes here}",
+            "\t\t\t</div>",
+            "\t\t\t<div class=\"modal-footer\">",
+            "\t\t\t\t<button type=\"button\" class=\"btn btn-secondary\" data-bs-dismiss=\"modal\">Close</button>",
+            "\t\t\t\t<button type=\"button\" class=\"btn btn-primary\">${5:Save changes}</button>",
+            "\t\t\t</div>",
+            "\t\t</div>",
+            "\t</div>",
+            "</div>"
+        ],
+        "description": "Bootstrap 5 modal component",
+        "scope": "text.html"
+    },
+    "bootstrap_alert": {
+        "prefix": "aaalert",
+        "body": [
+            "<div class=\"alert alert-${1:primary} alert-dismissible fade show\" role=\"alert\">",
+            "\t${2:Alert message}",
+            "\t<button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Close\"></button>",
+            "</div>"
+        ],
+        "description": "Bootstrap 5 dismissible alert",
+        "scope": "text.html"
+    },
+    "bootstrap_toast": {
+        "prefix": "aatoast",
+        "body": [
+            "<div class=\"toast\" role=\"alert\" aria-live=\"polite\" aria-atomic=\"true\">",
+            "\t<div class=\"toast-header\">",
+            "\t\t<strong class=\"me-auto\">${1:Title}</strong>",
+            "\t\t<small>${2:11 mins ago}</small>",
+            "\t\t<button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"toast\" aria-label=\"Close\"></button>",
+            "\t</div>",
+            "\t<div class=\"toast-body\">",
+            "\t\t${3:Toast message goes here}",
+            "\t</div>",
+            "</div>"
+        ],
+        "description": "Bootstrap 5 toast component",
+        "scope": "text.html"
+    },
+    "bootstrap_tabs": {
+        "prefix": "aatabs",
+        "body": [
+            "<ul class=\"nav nav-tabs\" id=\"${1:myTab}\" role=\"tablist\">",
+            "\t<li class=\"nav-item\" role=\"presentation\">",
+            "\t\t<button class=\"nav-link active\" id=\"${2:home}-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#${2:home}\" type=\"button\" role=\"tab\" aria-controls=\"${2:home}\" aria-selected=\"true\">${3:Home}</button>",
+            "\t</li>",
+            "\t<li class=\"nav-item\" role=\"presentation\">",
+            "\t\t<button class=\"nav-link\" id=\"${4:profile}-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#${4:profile}\" type=\"button\" role=\"tab\" aria-controls=\"${4:profile}\" aria-selected=\"false\">${5:Profile}</button>",
+            "\t</li>",
+            "</ul>",
+            "<div class=\"tab-content\" id=\"${1:myTab}Content\">",
+            "\t<div class=\"tab-pane fade show active\" id=\"${2:home}\" role=\"tabpanel\" aria-labelledby=\"${2:home}-tab\">${6:Home content}</div>",
+            "\t<div class=\"tab-pane fade\" id=\"${4:profile}\" role=\"tabpanel\" aria-labelledby=\"${4:profile}-tab\">${7:Profile content}</div>",
+            "</div>"
+        ],
+        "description": "Bootstrap 5 tabs component",
+        "scope": "text.html"
+    }
+} 
