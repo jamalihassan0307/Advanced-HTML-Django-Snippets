@@ -56,12 +56,12 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/your-username/ahtml-django-snippets"
+		"url": "https://github.com/jamalihassan0307/ahtml-django-snippets"
 	},
 	"bugs": {
-		"url": "https://github.com/your-username/ahtml-django-snippets/issues"
+		"url": "https://github.com/jamalihassan0307/ahtml-django-snippets/issues"
 	},
-	"homepage": "https://github.com/your-username/ahtml-django-snippets#readme",
+	"homepage": "https://github.com/jamalihassan0307/ahtml-django-snippets#readme",
 	"scripts": {
 		"package": "vsce package",
 		"publish": "vsce publish"
