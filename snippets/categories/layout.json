@@ -69,5 +69,197 @@
         ],
         "description": "Bootstrap 5 hero section",
         "scope": "text.html"
+    },
+    "html_container": {
+        "prefix": "alcontainer",
+        "body": [
+            "<div class=\"container\">",
+            "\t${1:content}",
+            "</div>"
+        ],
+        "description": "Bootstrap container",
+        "scope": "text.html"
+    },
+    "html_container_fluid": {
+        "prefix": "alcontainerfluid",
+        "body": [
+            "<div class=\"container-fluid\">",
+            "\t${1:content}",
+            "</div>"
+        ],
+        "description": "Bootstrap fluid container",
+        "scope": "text.html"
+    },
+    "html_row": {
+        "prefix": "alrow",
+        "body": [
+            "<div class=\"row\">",
+            "\t${1:columns}",
+            "</div>"
+        ],
+        "description": "Bootstrap row",
+        "scope": "text.html"
+    },
+    "html_column": {
+        "prefix": "alcol",
+        "body": [
+            "<div class=\"col-${1:12} col-md-${2:6} col-lg-${3:4}\">",
+            "\t${4:content}",
+            "</div>"
+        ],
+        "description": "Bootstrap column",
+        "scope": "text.html"
+    },
+    "html_grid_system": {
+        "prefix": "algrid",
+        "body": [
+            "<div class=\"container\">",
+            "\t<div class=\"row\">",
+            "\t\t<div class=\"col-12 col-md-6 col-lg-4\">",
+            "\t\t\t${1:Column 1}",
+            "\t\t</div>",
+            "\t\t<div class=\"col-12 col-md-6 col-lg-4\">",
+            "\t\t\t${2:Column 2}",
+            "\t\t</div>",
+            "\t\t<div class=\"col-12 col-md-6 col-lg-4\">",
+            "\t\t\t${3:Column 3}",
+            "\t\t</div>",
+            "\t</div>",
+            "</div>"
+        ],
+        "description": "Bootstrap grid system with responsive columns",
+        "scope": "text.html"
+    },
+    "html_flex_container": {
+        "prefix": "alflex",
+        "body": [
+            "<div class=\"d-flex justify-content-${1:start} align-items-${2:start}\">",
+            "\t${3:flex items}",
+            "</div>"
+        ],
+        "description": "Bootstrap flex container",
+        "scope": "text.html"
+    },
+    "html_flex_item": {
+        "prefix": "alflexitem",
+        "body": [
+            "<div class=\"flex-${1:grow}-${2:1}\">",
+            "\t${3:flex item content}",
+            "</div>"
+        ],
+        "description": "Bootstrap flex item",
+        "scope": "text.html"
+    },
+    "html_spacing": {
+        "prefix": "alspacing",
+        "body": [
+            "<div class=\"m-${1:3} p-${2:3}\">",
+            "\t${3:content with margin and padding}",
+            "</div>"
+        ],
+        "description": "Bootstrap spacing utilities",
+        "scope": "text.html"
+    },
+    "html_position": {
+        "prefix": "alposition",
+        "body": [
+            "<div class=\"position-${1:relative}\">",
+            "\t<div class=\"position-${2:absolute} top-${3:0} start-${4:0}\">",
+            "\t\t${5:positioned content}",
+            "\t</div>",
+            "</div>"
+        ],
+        "description": "Bootstrap positioning utilities",
+        "scope": "text.html"
+    },
+    "html_overflow": {
+        "prefix": "aloverflow",
+        "body": [
+            "<div class=\"overflow-${1:auto}\">",
+            "\t${2:content with overflow handling}",
+            "</div>"
+        ],
+        "description": "Bootstrap overflow utilities",
+        "scope": "text.html"
+    },
+    "html_shadow": {
+        "prefix": "alshadow",
+        "body": [
+            "<div class=\"shadow-${1:sm}\">",
+            "\t${2:content with shadow}",
+            "</div>"
+        ],
+        "description": "Bootstrap shadow utilities",
+        "scope": "text.html"
+    },
+    "html_ratio": {
+        "prefix": "alratio",
+        "body": [
+            "<div class=\"ratio ratio-${1:16x9}\">",
+            "\t<iframe src=\"${2:video-url}\" title=\"${3:Video title}\"></iframe>",
+            "</div>"
+        ],
+        "description": "Bootstrap aspect ratio utilities",
+        "scope": "text.html"
+    },
+    "html_visibility": {
+        "prefix": "alvisibility",
+        "body": [
+            "<div class=\"${1:visible} ${2:invisible}\">",
+            "\t${3:content with visibility control}",
+            "</div>"
+        ],
+        "description": "Bootstrap visibility utilities",
+        "scope": "text.html"
+    },
+    "html_vertical_align": {
+        "prefix": "alvalign",
+        "body": [
+            "<div class=\"align-${1:baseline}\">",
+            "\t${2:vertically aligned content}",
+            "</div>"
+        ],
+        "description": "Bootstrap vertical alignment utilities",
+        "scope": "text.html"
+    },
+    "html_text_wrap": {
+        "prefix": "alwrap",
+        "body": [
+            "<div class=\"text-${1:nowrap}\">",
+            "\t${2:content with text wrapping control}",
+            "</div>"
+        ],
+        "description": "Bootstrap text wrapping utilities",
+        "scope": "text.html"
+    },
+    "html_clearfix": {
+        "prefix": "alclearfix",
+        "body": [
+            "<div class=\"clearfix\">",
+            "\t${1:content with clearfix}",
+            "</div>"
+        ],
+        "description": "Bootstrap clearfix utility",
+        "scope": "text.html"
+    },
+    "html_sticky_top": {
+        "prefix": "alsticky",
+        "body": [
+            "<div class=\"sticky-top\">",
+            "\t${1:sticky content}",
+            "</div>"
+        ],
+        "description": "Bootstrap sticky positioning",
+        "scope": "text.html"
+    },
+    "html_z_index": {
+        "prefix": "alzindex",
+        "body": [
+            "<div class=\"z-${1:3}\">",
+            "\t${2:content with z-index}",
+            "</div>"
+        ],
+        "description": "Bootstrap z-index utilities",
+        "scope": "text.html"
     }
 } 
