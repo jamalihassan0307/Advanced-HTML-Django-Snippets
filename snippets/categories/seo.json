@@ -1,0 +1,176 @@
+{
+    "seo_meta_tags": {
+        "prefix": "aseometa",
+        "body": [
+            "<meta name=\"description\" content=\"${1:Page description}\">",
+            "<meta name=\"keywords\" content=\"${2:keywords,separated,by,commas}\">",
+            "<meta name=\"author\" content=\"${3:Author name}\">",
+            "<meta property=\"og:title\" content=\"${4:Title}\">",
+            "<meta property=\"og:description\" content=\"${1:Page description}\">",
+            "<meta property=\"og:image\" content=\"${5:image-url}\">",
+            "<meta property=\"og:url\" content=\"${6:page-url}\">",
+            "<meta name=\"twitter:card\" content=\"summary_large_image\">"
+        ],
+        "description": "Common SEO meta tags",
+        "scope": "text.html"
+    },
+    "seo_viewport": {
+        "prefix": "aseovp",
+        "body": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+        "description": "Responsive viewport meta tag",
+        "scope": "text.html"
+    },
+    "seo_charset": {
+        "prefix": "aseocharset",
+        "body": "<meta charset=\"UTF-8\">",
+        "description": "UTF-8 charset meta tag",
+        "scope": "text.html"
+    },
+    "seo_canonical": {
+        "prefix": "aseocanonical",
+        "body": "<link rel=\"canonical\" href=\"${1:https://example.com/page}\">",
+        "description": "Canonical URL link tag",
+        "scope": "text.html"
+    },
+    "seo_robots": {
+        "prefix": "aseorobots",
+        "body": "<meta name=\"robots\" content=\"${1:index,follow}\">",
+        "description": "Robots meta tag",
+        "scope": "text.html"
+    },
+    "seo_social": {
+        "prefix": "aseosocial",
+        "body": [
+            "<meta property=\"og:type\" content=\"${1:website}\">",
+            "<meta property=\"og:site_name\" content=\"${2:Site Name}\">",
+            "<meta property=\"og:locale\" content=\"${3:en_US}\">",
+            "<meta name=\"twitter:site\" content=\"@${4:username}\">",
+            "<meta name=\"twitter:creator\" content=\"@${4:username}\">"
+        ],
+        "description": "Social media meta tags",
+        "scope": "text.html"
+    },
+    "seo_alternate": {
+        "prefix": "aseoalternate",
+        "body": "<link rel=\"alternate\" hreflang=\"${1:en}\" href=\"${2:https://example.com/page}\">",
+        "description": "Alternate language link tag",
+        "scope": "text.html"
+    },
+    "seo_favicon": {
+        "prefix": "aseofavicon",
+        "body": [
+            "<link rel=\"icon\" type=\"image/x-icon\" href=\"${1:/favicon.ico}\">",
+            "<link rel=\"apple-touch-icon\" sizes=\"${2:180x180}\" href=\"${3:/apple-touch-icon.png}\">",
+            "<link rel=\"manifest\" href=\"${4:/site.webmanifest}\">"
+        ],
+        "description": "Favicon and app icons",
+        "scope": "text.html"
+    },
+    "seo_jsonld": {
+        "prefix": "aseojsonld",
+        "body": [
+            "<script type=\"application/ld+json\">",
+            "{",
+            "\t\"@context\": \"https://schema.org\",",
+            "\t\"@type\": \"${1:WebPage}\",",
+            "\t\"name\": \"${2:Page Name}\",",
+            "\t\"description\": \"${3:Page description}\",",
+            "\t\"url\": \"${4:https://example.com/page}\"",
+            "}",
+            "</script>"
+        ],
+        "description": "JSON-LD structured data",
+        "scope": "text.html"
+    },
+    "seo_article": {
+        "prefix": "aseoarticle",
+        "body": [
+            "<script type=\"application/ld+json\">",
+            "{",
+            "\t\"@context\": \"https://schema.org\",",
+            "\t\"@type\": \"Article\",",
+            "\t\"headline\": \"${1:Article Title}\",",
+            "\t\"author\": {",
+            "\t\t\"@type\": \"Person\",",
+            "\t\t\"name\": \"${2:Author Name}\"",
+            "\t},",
+            "\t\"datePublished\": \"${3:2024-01-01}\",",
+            "\t\"dateModified\": \"${4:2024-01-01}\",",
+            "\t\"description\": \"${5:Article description}\"",
+            "}",
+            "</script>"
+        ],
+        "description": "Article structured data",
+        "scope": "text.html"
+    },
+    "seo_breadcrumb": {
+        "prefix": "aseobreadcrumb",
+        "body": [
+            "<script type=\"application/ld+json\">",
+            "{",
+            "\t\"@context\": \"https://schema.org\",",
+            "\t\"@type\": \"BreadcrumbList\",",
+            "\t\"itemListElement\": [{",
+            "\t\t\"@type\": \"ListItem\",",
+            "\t\t\"position\": 1,",
+            "\t\t\"name\": \"${1:Home}\",",
+            "\t\t\"item\": \"${2:https://example.com}\"",
+            "\t}, {",
+            "\t\t\"@type\": \"ListItem\",",
+            "\t\t\"position\": 2,",
+            "\t\t\"name\": \"${3:Current Page}\",",
+            "\t\t\"item\": \"${4:https://example.com/page}\"",
+            "\t}]",
+            "}",
+            "</script>"
+        ],
+        "description": "Breadcrumb structured data",
+        "scope": "text.html"
+    },
+    "seo_organization": {
+        "prefix": "aseoorg",
+        "body": [
+            "<script type=\"application/ld+json\">",
+            "{",
+            "\t\"@context\": \"https://schema.org\",",
+            "\t\"@type\": \"Organization\",",
+            "\t\"name\": \"${1:Organization Name}\",",
+            "\t\"url\": \"${2:https://example.com}\",",
+            "\t\"logo\": \"${3:https://example.com/logo.png}\",",
+            "\t\"contactPoint\": {",
+            "\t\t\"@type\": \"ContactPoint\",",
+            "\t\t\"telephone\": \"${4:+1-123-456-7890}\",",
+            "\t\t\"contactType\": \"${5:customer service}\"",
+            "\t}",
+            "}",
+            "</script>"
+        ],
+        "description": "Organization structured data",
+        "scope": "text.html"
+    },
+    "seo_product": {
+        "prefix": "aseoproduct",
+        "body": [
+            "<script type=\"application/ld+json\">",
+            "{",
+            "\t\"@context\": \"https://schema.org\",",
+            "\t\"@type\": \"Product\",",
+            "\t\"name\": \"${1:Product Name}\",",
+            "\t\"description\": \"${2:Product description}\",",
+            "\t\"brand\": {",
+            "\t\t\"@type\": \"Brand\",",
+            "\t\t\"name\": \"${3:Brand Name}\"",
+            "\t},",
+            "\t\"offers\": {",
+            "\t\t\"@type\": \"Offer\",",
+            "\t\t\"price\": \"${4:99.99}\",",
+            "\t\t\"priceCurrency\": \"${5:USD}\",",
+            "\t\t\"availability\": \"${6:https://schema.org/InStock}\"",
+            "\t}",
+            "}",
+            "</script>"
+        ],
+        "description": "Product structured data",
+        "scope": "text.html"
+    }
+} 
