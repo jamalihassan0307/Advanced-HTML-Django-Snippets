@@ -1,12 +1,12 @@
 {
     "html_doctype": {
-        "prefix": "hdoc",
+        "prefix": "ahdoc",
         "body": "<!DOCTYPE html>",
         "description": "HTML5 doctype declaration",
         "scope": "text.html"
     },
     "html_boilerplate": {
-        "prefix": "hboiler",
+        "prefix": "ahboiler",
         "body": [
             "<!DOCTYPE html>",
             "<html lang=\"${1:en}\">",
@@ -26,25 +26,25 @@
         "scope": "text.html"
     },
     "html_link": {
-        "prefix": "hlink",
+        "prefix": "ahlink",
         "body": "<a href=\"${1:#}\" class=\"${2:link}\">${3:Link text}</a>",
         "description": "HTML link with class",
         "scope": "text.html"
     },
     "html_image": {
-        "prefix": "himg",
+        "prefix": "ahimg",
         "body": "<img src=\"${1:image.jpg}\" alt=\"${2:description}\" class=\"${3:img-fluid}\">",
         "description": "HTML image with class",
         "scope": "text.html"
     },
     "html_paragraph": {
-        "prefix": "hp",
+        "prefix": "ahp",
         "body": "<p class=\"${1:text}\">${2:content}</p>",
         "description": "HTML paragraph with class",
         "scope": "text.html"
     },
     "html_list_unordered": {
-        "prefix": "hul",
+        "prefix": "ahul",
         "body": [
             "<ul class=\"${1:list}\">",
             "\t<li>${2:First item}</li>",
@@ -56,7 +56,7 @@
         "scope": "text.html"
     },
     "html_list_ordered": {
-        "prefix": "hol",
+        "prefix": "ahol",
         "body": [
             "<ol class=\"${1:list}\">",
             "\t<li>${2:First item}</li>",
@@ -68,43 +68,43 @@
         "scope": "text.html"
     },
     "html_heading_1": {
-        "prefix": "hh1",
+        "prefix": "ahh1",
         "body": "<h1 class=\"${1:title}\">${2:Heading 1}</h1>",
         "description": "HTML h1 heading with class",
         "scope": "text.html"
     },
     "html_heading_2": {
-        "prefix": "hh2",
+        "prefix": "ahh2",
         "body": "<h2 class=\"${1:title}\">${2:Heading 2}</h2>",
         "description": "HTML h2 heading with class",
         "scope": "text.html"
     },
     "html_heading_3": {
-        "prefix": "hh3",
+        "prefix": "ahh3",
         "body": "<h3 class=\"${1:title}\">${2:Heading 3}</h3>",
         "description": "HTML h3 heading with class",
         "scope": "text.html"
     },
     "html_div": {
-        "prefix": "hdiv",
+        "prefix": "ahdiv",
         "body": "<div class=\"${1:container}\">${2:content}</div>",
         "description": "HTML div with class",
         "scope": "text.html"
     },
     "html_span": {
-        "prefix": "hspan",
+        "prefix": "ahspan",
         "body": "<span class=\"${1:text}\">${2:content}</span>",
         "description": "HTML span with class",
         "scope": "text.html"
     },
     "html_button": {
-        "prefix": "hbtn",
+        "prefix": "ahbtn",
         "body": "<button type=\"${1:button}\" class=\"${2:btn}\">${3:Button Text}</button>",
         "description": "HTML button with class",
         "scope": "text.html"
     },
     "html_table": {
-        "prefix": "htable",
+        "prefix": "ahtable",
         "body": [
             "<table class=\"${1:table}\">",
             "\t<thead>",
@@ -125,7 +125,7 @@
         "scope": "text.html"
     },
     "html_article": {
-        "prefix": "harticle",
+        "prefix": "aharticle",
         "body": [
             "<article class=\"${1:article}\">",
             "\t<h2>${2:Article Title}</h2>",
@@ -136,7 +136,7 @@
         "scope": "text.html"
     },
     "html_aside": {
-        "prefix": "haside",
+        "prefix": "ahaside",
         "body": [
             "<aside class=\"${1:sidebar}\">",
             "\t<h3>${2:Sidebar Title}</h3>",
@@ -147,7 +147,7 @@
         "scope": "text.html"
     },
     "html_nav": {
-        "prefix": "hnav",
+        "prefix": "ahnav",
         "body": [
             "<nav class=\"${1:navigation}\">",
             "\t<ul>",
@@ -160,7 +160,7 @@
         "scope": "text.html"
     },
     "html_main": {
-        "prefix": "hmain",
+        "prefix": "ahmain",
         "body": [
             "<main class=\"${1:main-content}\">",
             "\t<h1>${2:Page Title}</h1>",
@@ -171,13 +171,13 @@
         "scope": "text.html"
     },
     "html_time": {
-        "prefix": "htime",
+        "prefix": "ahtime",
         "body": "<time datetime=\"${1:2024-01-01}\">${2:January 1, 2024}</time>",
         "description": "HTML time element with datetime attribute",
         "scope": "text.html"
     },
     "html_figure": {
-        "prefix": "hfig",
+        "prefix": "ahfig",
         "body": [
             "<figure class=\"${1:figure}\">",
             "\t<img src=\"${2:image.jpg}\" alt=\"${3:description}\" class=\"${4:img-fluid}\">",
@@ -188,7 +188,7 @@
         "scope": "text.html"
     },
     "html_details": {
-        "prefix": "hdetails",
+        "prefix": "ahdetails",
         "body": [
             "<details>",
             "\t<summary>${1:Summary Title}</summary>",
@@ -199,9 +199,198 @@
         "scope": "text.html"
     },
     "html_mark": {
-        "prefix": "hmark",
+        "prefix": "ahmark",
         "body": "<mark class=\"${1:highlight}\">${2:highlighted text}</mark>",
         "description": "HTML mark element for highlighting text",
+        "scope": "text.html"
+    },
+    "html_strong": {
+        "prefix": "ahstrong",
+        "body": "<strong>${1:important text}</strong>",
+        "description": "HTML strong element for important text",
+        "scope": "text.html"
+    },
+    "html_em": {
+        "prefix": "ahem",
+        "body": "<em>${1:emphasized text}</em>",
+        "description": "HTML em element for emphasized text",
+        "scope": "text.html"
+    },
+    "html_underline": {
+        "prefix": "ahu",
+        "body": "<u>${1:underlined text}</u>",
+        "description": "HTML underline element",
+        "scope": "text.html"
+    },
+    "html_break": {
+        "prefix": "ahbr",
+        "body": "<br>",
+        "description": "HTML line break",
+        "scope": "text.html"
+    },
+    "html_hr": {
+        "prefix": "ahhr",
+        "body": "<hr class=\"${1:divider}\">",
+        "description": "HTML horizontal rule with class",
+        "scope": "text.html"
+    },
+    "html_video": {
+        "prefix": "ahvideo",
+        "body": [
+            "<video class=\"${1:video-player}\" controls>",
+            "\t<source src=\"${2:video.mp4}\" type=\"video/mp4\">",
+            "\t<source src=\"${3:video.webm}\" type=\"video/webm\">",
+            "\tYour browser does not support the video tag.",
+            "</video>"
+        ],
+        "description": "HTML video element with multiple sources",
+        "scope": "text.html"
+    },
+    "html_audio": {
+        "prefix": "ahaudio",
+        "body": [
+            "<audio class=\"${1:audio-player}\" controls>",
+            "\t<source src=\"${2:audio.mp3}\" type=\"audio/mpeg\">",
+            "\t<source src=\"${3:audio.ogg}\" type=\"audio/ogg\">",
+            "\tYour browser does not support the audio tag.",
+            "</audio>"
+        ],
+        "description": "HTML audio element with multiple sources",
+        "scope": "text.html"
+    },
+    "html_iframe": {
+        "prefix": "ahiframe",
+        "body": "<iframe src=\"${1:url}\" title=\"${2:description}\" class=\"${3:frame}\" width=\"${4:600}\" height=\"${5:400}\"></iframe>",
+        "description": "HTML iframe for embedding content",
+        "scope": "text.html"
+    },
+    "html_definition_list": {
+        "prefix": "ahdl",
+        "body": [
+            "<dl class=\"${1:definition-list}\">",
+            "\t<dt>${2:Term 1}</dt>",
+            "\t<dd>${3:Description 1}</dd>",
+            "\t<dt>${4:Term 2}</dt>",
+            "\t<dd>${5:Description 2}</dd>",
+            "</dl>"
+        ],
+        "description": "HTML definition list structure",
+        "scope": "text.html"
+    },
+    "html_form": {
+        "prefix": "ahform",
+        "body": [
+            "<form action=\"${1:submit-url}\" method=\"${2:post}\" class=\"${3:form}\">",
+            "\t<div class=\"form-group\">",
+            "\t\t<label for=\"${4:input-id}\">${5:Label}</label>",
+            "\t\t<input type=\"${6:text}\" id=\"${4:input-id}\" name=\"${7:input-name}\" class=\"${8:form-control}\">",
+            "\t</div>",
+            "\t<button type=\"submit\" class=\"${9:btn btn-primary}\">${10:Submit}</button>",
+            "</form>"
+        ],
+        "description": "HTML form with label and input",
+        "scope": "text.html"
+    },
+    "html_input": {
+        "prefix": "ahinput",
+        "body": "<input type=\"${1:text}\" id=\"${2:input-id}\" name=\"${3:input-name}\" class=\"${4:form-control}\" placeholder=\"${5:Enter text}\">",
+        "description": "HTML input element",
+        "scope": "text.html"
+    },
+    "html_label": {
+        "prefix": "ahlabel",
+        "body": "<label for=\"${1:input-id}\">${2:Label text}</label>",
+        "description": "HTML label element",
+        "scope": "text.html"
+    },
+    "html_select": {
+        "prefix": "ahselect",
+        "body": [
+            "<select id=\"${1:select-id}\" name=\"${2:select-name}\" class=\"${3:form-select}\">",
+            "\t<option value=\"${4:value1}\">${5:Option 1}</option>",
+            "\t<option value=\"${6:value2}\">${7:Option 2}</option>",
+            "\t<option value=\"${8:value3}\">${9:Option 3}</option>",
+            "</select>"
+        ],
+        "description": "HTML select dropdown",
+        "scope": "text.html"
+    },
+    "html_textarea": {
+        "prefix": "ahtextarea",
+        "body": "<textarea id=\"${1:textarea-id}\" name=\"${2:textarea-name}\" class=\"${3:form-control}\" rows=\"${4:4}\" placeholder=\"${5:Enter text here}\"></textarea>",
+        "description": "HTML textarea element",
+        "scope": "text.html"
+    },
+    "html_fieldset": {
+        "prefix": "ahfieldset",
+        "body": [
+            "<fieldset class=\"${1:form-group}\">",
+            "\t<legend>${2:Form Section}</legend>",
+            "\t${3:form elements}",
+            "</fieldset>"
+        ],
+        "description": "HTML fieldset with legend",
+        "scope": "text.html"
+    },
+    "html_header": {
+        "prefix": "ahheader",
+        "body": [
+            "<header class=\"${1:header}\">",
+            "\t<h1>${2:Page Title}</h1>",
+            "\t${3:header content}",
+            "</header>"
+        ],
+        "description": "HTML header section",
+        "scope": "text.html"
+    },
+    "html_section": {
+        "prefix": "ahsection",
+        "body": [
+            "<section class=\"${1:section}\">",
+            "\t<h2>${2:Section Title}</h2>",
+            "\t${3:section content}",
+            "</section>"
+        ],
+        "description": "HTML section element",
+        "scope": "text.html"
+    },
+    "html_footer": {
+        "prefix": "ahfooter",
+        "body": [
+            "<footer class=\"${1:footer}\">",
+            "\t<div class=\"${2:footer-content}\">",
+            "\t\t${3:footer content}",
+            "\t</div>",
+            "</footer>"
+        ],
+        "description": "HTML footer section",
+        "scope": "text.html"
+    },
+    "html_table_full": {
+        "prefix": "ahtablefull",
+        "body": [
+            "<table class=\"${1:table}\">",
+            "\t<thead>",
+            "\t\t<tr>",
+            "\t\t\t<th scope=\"col\">${2:Header 1}</th>",
+            "\t\t\t<th scope=\"col\">${3:Header 2}</th>",
+            "\t\t</tr>",
+            "\t</thead>",
+            "\t<tbody>",
+            "\t\t<tr>",
+            "\t\t\t<td>${4:Data 1}</td>",
+            "\t\t\t<td>${5:Data 2}</td>",
+            "\t\t</tr>",
+            "\t</tbody>",
+            "\t<tfoot>",
+            "\t\t<tr>",
+            "\t\t\t<td>${6:Footer 1}</td>",
+            "\t\t\t<td>${7:Footer 2}</td>",
+            "\t\t</tr>",
+            "\t</tfoot>",
+            "</table>"
+        ],
+        "description": "Complete HTML table with header, body, and footer",
         "scope": "text.html"
     }
 } 
