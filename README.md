@@ -1,95 +1,176 @@
-# Advanced HTML & Django Snippets
+# Django HTML Snippets for VS Code
 
-A comprehensive collection of HTML, Bootstrap 5, and Django template snippets for Visual Studio Code. These snippets are designed to enhance your web development workflow with easy-to-use, accessible, and modern components.
+A collection of useful Django template and Python snippets for Visual Studio Code. These snippets are designed to speed up Django development by providing commonly used code patterns.
 
 ## Features
 
-All snippets start with the prefix `aa` for easy access and to avoid conflicts with other snippet extensions.
-
-### Categories
-
-1. **HTML Basic Elements** (`aa`)
-   - Basic HTML structure
-   - Common HTML elements
-   - Text formatting
-   - Lists and tables
-
-2. **Bootstrap 5 Components** (`aa`)
-   - Navigation bars
-   - Cards
-   - Modals
-   - Alerts
-   - Toasts
-   - Pagination
-
-3. **Django Templates** (`aad`)
-   - Template tags
-   - Blocks
-   - Loops and conditionals
-   - Include statements
-   - Static files
-
-4. **Forms** (`aa`)
-   - Input fields
-   - Textareas
-   - Select dropdowns
-   - Checkboxes
-   - Radio buttons
-   - Django forms
-
-5. **Layout** (`aa`)
-   - Grid systems
-   - Sections
-   - Headers
-   - Footers
-   - Hero sections
-
-6. **SEO & Meta Tags** (`aa`)
-   - Meta descriptions
-   - Open Graph tags
-   - Twitter cards
-   - Viewport settings
-
-7. **Accessibility** (`aa`)
-   - Skip links
-   - ARIA roles
-   - Alert notifications
-   - Dialog components
-   - Tab panels
-
-## Usage
-
-Type `aa` followed by the snippet name. For example:
-- `aagrid` → Bootstrap responsive grid
-- `aadform` → Django form with CSRF protection
-- `aaseo` → Common SEO meta tags
-- `aaskip` → Accessibility skip link
+- Django template tags and filters
+- Django Python code (views, models, forms, etc.)
+- Bootstrap integration
+- Form handling
+- Authentication templates
+- Common UI patterns
 
 ## Installation
 
-1. Open VS Code
-2. Go to Extensions (Ctrl+Shift+X)
-3. Search for "Advanced HTML & Django Snippets"
-4. Click Install
+1. Install through VS Code extensions
+2. Search for `Django HTML Snippets`
+3. Install and reload VS Code
+
+## Available Snippets
+
+### Django Template Tags (`ad` prefix)
+
+| Prefix | Description |
+|--------|-------------|
+| `adblock` | Django template block |
+| `adstatic` | Django static file reference |
+| `adfor` | Django for loop template tag |
+| `adif` | Django if-else template tag |
+| `adinclude` | Django include template tag |
+| `adurl` | Django URL template tag |
+| `adextends` | Django extends template tag |
+| `adcsrf` | Django CSRF token tag |
+| `adload` | Django load template tag |
+| `adcomment` | Django comment tag |
+| `adwith` | Django with template tag |
+| `adfilter` | Django filter syntax |
+| `adfilters` | Common Django template filters loading |
+| `adform` | Form template with crispy forms |
+| `admessages` | Messages framework template |
+| `adpagination` | Bootstrap pagination template |
+| `adnav` | Bootstrap navbar with authentication |
+
+### Django Python Code (`adp` prefix)
+
+| Prefix | Description |
+|--------|-------------|
+| `adpview` | Django view function |
+| `adpmodel` | Django model class |
+| `adpform` | Django form class |
+| `adpadmin` | Django admin class |
+| `adpurls` | Django URLs configuration |
+| `adpclass` | Class-based view with login required |
+| `adpapi` | REST framework ViewSet |
+| `adpmiddleware` | Custom middleware class |
+| `adpsignals` | Model signals |
+| `adpcommand` | Management command |
+| `adpauthviews` | Authentication views |
+| `adptests` | Test class with common test cases |
+
+## Usage Examples
+
+### Template Tags
+
+```html
+# Block Tag
+adblock⇥
+{% block content %}
+    
+{% endblock %}
+
+# For Loop
+adfor⇥
+{% for item in list %}
+    
+{% endfor %}
+
+# If Statement
+adif⇥
+{% if condition %}
+    
+{% else %}
+    
+{% endif %}
+
+# Form with CSRF
+adform⇥
+<form method="post" class="form">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+```
+
+### Python Code
+
+```python
+# View Function
+adpview⇥
+from django.shortcuts import render, HttpResponse
+from django.views.generic import TemplateView
+
+def view_name(request):
+    return render(request, 'template.html', {
+        'context_variable': value
+    })
+
+# Model Class
+adpmodel⇥
+from django.db import models
+
+class ModelName(models.Model):
+    field_name = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.field_name
+
+    class Meta:
+        verbose_name = 'Model Name'
+        verbose_name_plural = 'Model Names'
+
+# Class-Based View
+adpclass⇥
+from django.views.generic import ListView
+from django.contrib.auth.mixins import LoginRequiredMixin
+from .models import Model
+
+class ViewName(LoginRequiredMixin, ListView):
+    model = Model
+    template_name = 'template.html'
+    context_object_name = 'objects'
+    paginate_by = 10
+```
+
+## Features
+
+### Bootstrap Integration
+- Navbar with authentication
+- Pagination
+- Forms with crispy-forms
+- Responsive components
+
+### Authentication
+- Login/Logout views
+- Password change/reset views
+- User registration
+- Profile templates
+
+### REST Framework Support
+- ViewSets
+- Serializers
+- API views
+- Authentication
+
+### Testing
+- TestCase setup
+- Common test patterns
+- URL testing
+- Template testing
 
 ## Requirements
 
-- Visual Studio Code version 1.60.0 or higher
+- Visual Studio Code
+- Django project
+- Python environment
+- (Optional) django-crispy-forms for form templates
+- (Optional) Django REST framework for API snippets
+- (Optional) Bootstrap 5 for UI components
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Feel free to submit issues and enhancement requests!
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Support
-
-If you encounter any problems or have suggestions, please [open an issue](https://github.com/your-username/ahtml-django-snippets/issues) on our GitHub repository.
+This extension is licensed under the MIT License.
