@@ -1,20 +1,45 @@
-# Welcome to your VS Code Extension
+# Getting Started with aHTML Django Snippets
 
-## What's in the folder
-* This folder contains all of the files necessary for your extension
-* `package.json` - this is the manifest file that defines the location of the snippet file
-and specifies the language of the snippets
-* `snippets/snippets.json` - the file containing all snippets 
+## What's in the Extension
+* `package.json` - Extension manifest and metadata
+* `snippets/snippets.json` - Collection of HTML, Bootstrap, and Django snippets
+* All snippets use the `aa` prefix for easy access
 
-## Get up and running straight away
-* press `F5` to open a new window with your extension loaded
-* create a new file with a file name suffix matching your language
-* verify that your snippets are proposed on intellisense
+## Testing the Snippets
 
-## Make changes
-* you can relaunch the extension from the debug toolbar after making changes to the files listed above
-* you can also reload (`Ctrl+R` or `Cmd+R` on Mac) the VS Code window with your extension to load your changes
+1. Press `F5` to open a new VS Code window with the extension loaded
+2. Create a new file with `.html` extension
+3. Type `aa` to see all available snippets
+4. Try some common snippets:
+   * `aa!` - HTML5 boilerplate
+   * `aadblock` - Django template block
+   * `aacard` - Bootstrap card component
+   * `aanavbar` - Bootstrap navbar
 
-## Install your extension
-* To start using your extension with Visual Studio Code copy it into the <user home>/.vscode/extensions folder and restart Code.
-* To share your extension with the world, read on https://code.visualstudio.com/docs about publishing an extension.
+## Snippet Categories
+
+* HTML5 Boilerplate
+* Django Template Tags
+* Forms and Input Components
+* Bootstrap 5 Components
+* Media Elements
+* Accessibility Features
+* Icons and SVG
+
+## Development
+
+1. Make changes to `snippets/snippets.json`
+2. Reload the VS Code window (`Ctrl+R` or `Cmd+R` on Mac)
+3. Test your changes in a new HTML file
+
+## Publishing
+
+1. Update version in `package.json`
+2. Update changelog if applicable
+3. Publish to VS Code Marketplace using `vsce publish`
+
+## Resources
+
+* [VS Code Extension Documentation](https://code.visualstudio.com/api)
+* [Django Template Documentation](https://docs.djangoproject.com/en/stable/topics/templates/)
+* [Bootstrap 5 Documentation](https://getbootstrap.com/docs/5.0/getting-started/introduction/)

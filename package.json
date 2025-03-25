@@ -1,8 +1,8 @@
 {
 	"name": "ahtml-django-snippets",
 	"displayName": "aHTML Django Snippets",
-	"description": "Pre-built aHTML snippets with Django template tags ({% %}, {{ }}). No setup, just speed!",
-	"version": "0.0.1",
+	"description": "Comprehensive collection of HTML5, Bootstrap 5, and Django template snippets with 'aa' prefix. Features responsive components, accessibility elements, and modern UI patterns.",
+	"version": "0.1.0",
 	"publisher": "jamalihassan0307",
 	"icon": "images/logo.png",
 	"engines": {
@@ -15,6 +15,13 @@
 	"categories": [
 		"Snippets"
 	],
+	"keywords": [
+		"html",
+		"django",
+		"bootstrap",
+		"snippets",
+		"templates"
+	],
 	"contributes": {
 		"snippets": [
 			{
@@ -25,11 +32,11 @@
 	},
 	"license": "MIT",
 	"bugs": {
-			"url": "https://github.com/abusaidm/html-snippets/issues"
+		"url": "https://github.com/jamalihassan0307/ahtml-django-snippets/issues"
 	},
 	"repository": {
-			"type": "git",
-			"url": "https://github.com/abusaidm/html-snippets.git"
+		"type": "git",
+		"url": "https://github.com/jamalihassan0307/ahtml-django-snippets.git"
 	},
-	"homepage": "https://github.com/abusaidm/html-snippets/blob/master/README.md"
+	"homepage": "https://github.com/jamalihassan0307/ahtml-django-snippets#readme"
 }

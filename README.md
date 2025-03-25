@@ -84,3 +84,85 @@ MIT License, refer to license file.
 [Github](https://github.com/abusaidm/html-snippets)
 
 ** Enjoy!**
+
+# aHTML Django Snippets
+
+This extension provides a rich set of HTML and Django template snippets for VS Code, making web development faster and more efficient. All snippets start with the prefix "aa" for easy access.
+
+## Features
+
+- HTML5 and Bootstrap 5 Components
+- Django Template Tags and Forms
+- Responsive Design Components
+- Accessibility Features
+- Modern UI Components
+
+## Available Snippets
+
+### HTML Boilerplate
+- `aa!` - Complete HTML5 boilerplate with responsive meta tags
+- `aadoctype` - HTML5 doctype declaration
+
+### Django Template Tags
+- `aadblock` - Django template block
+- `aadfor` - Django for loop
+- `aadif` - Django if-else statement
+- `aadextends` - Django extends template tag
+- `aadinclude` - Django include template tag
+- `aadurl` - Django URL template tag
+- `aadstatic` - Django static file reference
+
+### Forms and Input
+- `aadform` - Django form with CSRF protection
+- `aadcrispy` - Django form with crispy-forms
+- `aainputgroup` - Bootstrap 5 input group with label
+
+### Bootstrap Components
+- `aacard` - Bootstrap-style responsive card
+- `aanavbar` - Responsive Bootstrap 5 navbar
+- `aacontainer` - Bootstrap container
+- `aarow` - Bootstrap grid row with columns
+- `aamodal` - Bootstrap 5 modal component
+- `aaalert` - Bootstrap 5 dismissible alert
+- `aatabs` - Bootstrap 5 tabs component
+
+### Media and Icons
+- `aaimg_responsive` - Responsive image with lazy loading
+- `aavideo_embed` - Responsive video embed
+- `aafa` - Font Awesome icon
+- `aasvg` - Bootstrap Icons SVG snippet
+
+### Accessibility
+- `aaskip_link` - Accessibility skip link
+- `aaaria_alert` - Accessible alert notification
+
+### Django Messages
+- `aadmessages` - Django messages framework with Bootstrap alerts
+
+## Installation
+
+1. Install Visual Studio Code 1.9.1 or higher
+2. Launch Code
+3. From the command palette `Ctrl-Shift-P` (Windows, Linux) or `Cmd-Shift-P` (OSX)
+4. Select Install Extension
+5. Search for `aHTML Django Snippets`
+6. Choose the extension
+7. Reload Visual Studio Code
+
+## Usage
+
+Type `aa` followed by the snippet name and press `Enter` or `Tab` to insert the snippet. Use `Tab` to navigate through the placeholders.
+
+## Contributing
+
+Feel free to submit issues and enhancement requests on our GitHub repository.
+
+## License
+
+MIT License, refer to license file.
+
+## Author
+
+jamalihassan0307
+
+**Enjoy coding faster with aHTML Django Snippets!**
