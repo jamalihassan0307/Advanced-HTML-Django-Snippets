@@ -187,7 +187,7 @@
     },
 
     "django_if": {
-        "prefix": "aadif",
+        "prefix": "aaif",
         "body": [
             "{% if ${1:condition} %}",
             "\t${2}",
@@ -200,21 +200,21 @@
     },
 
     "django_include": {
-        "prefix": "aadinclude",
+        "prefix": "aainclude",
         "body": "{% include '${1:template_name.html}' %}",
         "description": "Django include template tag",
         "scope": "text.html.django"
     },
 
     "django_url": {
-        "prefix": "aadurl",
+        "prefix": "aaurl",
         "body": "{% url '${1:url_name}' %}",
         "description": "Django URL template tag",
         "scope": "text.html.django"
     },
 
     "django_extends": {
-        "prefix": "aadextends",
+        "prefix": "aaextends",
         "body": "{% extends '${1:base.html}' %}",
         "description": "Django extends template tag",
         "scope": "text.html.django"
@@ -246,7 +246,7 @@
     },
 
     "django_crispy_form": {
-        "prefix": "aadcrispy",
+        "prefix": "aacrispy",
         "body": [
             "{% load crispy_forms_tags %}",
             "<form method=\"${1:post}\" action=\"${2:#}\">",
@@ -272,7 +272,7 @@
     },
 
     "django_messages": {
-        "prefix": "aadmessages",
+        "prefix": "aamessages",
         "body": [
             "{% if messages %}",
             "<div class=\"messages\">",
