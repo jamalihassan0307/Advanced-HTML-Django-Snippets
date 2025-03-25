@@ -1,1 +1,92 @@
- 
+{
+    "django_block": {
+        "prefix": "aadblock",
+        "body": [
+            "{% block ${1:content} %}",
+            "\t${0}",
+            "{% endblock %}"
+        ],
+        "description": "Django template block",
+        "scope": "text.html.django"
+    },
+    "django_static": {
+        "prefix": "aadstatic",
+        "body": "{% static '${1:path/to/file}' %}",
+        "description": "Django static file reference",
+        "scope": "text.html.django"
+    },
+    "django_forloop": {
+        "prefix": "aadfor",
+        "body": [
+            "{% for ${1:item} in ${2:list} %}",
+            "\t${0}",
+            "{% endfor %}"
+        ],
+        "description": "Django for loop template tag",
+        "scope": "text.html.django"
+    },
+    "django_if": {
+        "prefix": "aadif",
+        "body": [
+            "{% if ${1:condition} %}",
+            "\t${2}",
+            "{% else %}",
+            "\t${3}",
+            "{% endif %}"
+        ],
+        "description": "Django if-else template tag",
+        "scope": "text.html.django"
+    },
+    "django_include": {
+        "prefix": "aadinclude",
+        "body": "{% include '${1:template_name.html}' %}",
+        "description": "Django include template tag",
+        "scope": "text.html.django"
+    },
+    "django_url": {
+        "prefix": "aadurl",
+        "body": "{% url '${1:url_name}' %}",
+        "description": "Django URL template tag",
+        "scope": "text.html.django"
+    },
+    "django_extends": {
+        "prefix": "aadextends",
+        "body": "{% extends '${1:base.html}' %}",
+        "description": "Django extends template tag",
+        "scope": "text.html.django"
+    },
+    "django_csrf": {
+        "prefix": "aadcsrf",
+        "body": "{% csrf_token %}",
+        "description": "Django CSRF token tag",
+        "scope": "text.html.django"
+    },
+    "django_load": {
+        "prefix": "aadload",
+        "body": "{% load ${1:static} %}",
+        "description": "Django load template tag",
+        "scope": "text.html.django"
+    },
+    "django_comment": {
+        "prefix": "aadcomment",
+        "body": "{% comment %}${1:comment text}{% endcomment %}",
+        "description": "Django comment tag",
+        "scope": "text.html.django"
+    },
+    "django_with": {
+        "prefix": "aadwith",
+        "body": [
+            "{% with ${1:variable}=${2:value} %}",
+            "\t${3:content}",
+            "{% endwith %}"
+        ],
+        "description": "Django with template tag",
+        "scope": "text.html.django"
+    },
+    "django_filter": {
+        "prefix": "aadfilter",
+        "body": "{{ ${1:variable}|${2:filter}:${3:parameter} }}",
+        "description": "Django filter syntax",
+        "scope": "text.html.django"
+    }
+} 
