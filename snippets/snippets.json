@@ -1,6 +1,6 @@
 {
     "doctype": {
-    "prefix": "doctype",
+    "prefix": "adoctype",
     "body": [
         "<!DOCTYPE>",
         "$1"
@@ -9,19 +9,19 @@
     "scope": "text.html"
     },
     "a": {
-    "prefix": "a",
+    "prefix": "aa",
     "body": "<a href=\"$1\">$2</a>$3",
     "description": "HTML - Defines a hyperlink",
     "scope": "text.html"
     },
     "abbr": {
-    "prefix": "abbr",
+    "prefix": "aabbr",
     "body": "<abbr title=\"$1\">$2</abbr>$3",
     "description": "HTML - Defines an abbreviation",
     "scope": "text.html"
     },
     "address": {
-    "prefix": "address",
+    "prefix": "aaddress",
     "body": [
         "<address>",
         "$1",
@@ -31,13 +31,13 @@
     "scope": "text.html"
     },
     "area": {
-    "prefix": "area",
+    "prefix": "aarea",
     "body": "<area shape=\"$1\" coords=\"$2\" href=\"$3\" alt=\"$4\">$5",
     "description": "HTML - Defines an area inside an image map",
     "scope": "text.html"
     },
     "article": {
-    "prefix": "article",
+    "prefix": "aarticle",
     "body": [
         "<article>",
         "\t$1",
@@ -47,7 +47,7 @@
     "scope": "text.html"
     },
     "aside": {
-    "prefix": "aside",
+    "prefix": "aaside",
     "body": [
         "<aside>",
         "\t$1",
@@ -57,7 +57,7 @@
     "scope": "text.html"
     },
     "audio": {
-    "prefix": "audio",
+    "prefix": "aaudio",
     "body": [
         "<audio controls>",
         "\t$1",
@@ -67,25 +67,25 @@
     "scope": "text.html"
     },
     "b": {
-    "prefix": "b",
+    "prefix": "ab",
     "body": "<b>$1</b>$2",
     "description": "HTML - Defines bold text",
     "scope": "text.html"
     },
     "base": {
-    "prefix": "base",
+    "prefix": "abase",
     "body": "<base href=\"$1\" target=\"$2\">$3",
     "description": "HTML - Defines a base URL for all the links in a page",
     "scope": "text.html"
     },
     "bdi": {
-    "prefix": "bdi",
+    "prefix": "abdi",
     "body": "<bdi>$1</bdi>$2",
     "description": "HTML - Used to isolate text that is of unknown directionality",
     "scope": "text.html"
     },
     "bdo": {
-    "prefix": "bdo",
+    "prefix": "abdo",
     "body": [
         "<bdo dir=\"$1\">",
         "$2",
@@ -94,13 +94,13 @@
     "scope": "text.html"
     },
     "big": {
-    "prefix": "big",
+    "prefix": "abig",
     "body": "<big>$1</big>$2",
     "description": "HTML - Used to make text bigger",
     "scope": "text.html"
     },
     "blockquote": {
-    "prefix": "blockquote",
+    "prefix": "ablockquote",
     "body": [
         "<blockquote cite=\"$2\">",
         "\t$1",
@@ -110,7 +110,7 @@
     "scope": "text.html"
     },
     "body": {
-    "prefix": "body",
+    "prefix": "abody",
     "body": [
         "<body>",
         "\t$1",
@@ -119,49 +119,49 @@
     "scope": "text.html"
     },
     "br": {
-    "prefix": "br",
+    "prefix": "abr",
     "body": "<br>",
     "description": "HTML - Inserts a single line break",
     "scope": "text.html"
     },
     "button": {
-    "prefix": "button",
+    "prefix": "abutton",
     "body": "<button type=\"$1\">$2</button>$3",
     "description": "HTML - Defines a push button",
     "scope": "text.html"
     },
     "canvas": {
-    "prefix": "canvas",
+    "prefix": "acanvas",
     "body": "<canvas id=\"$1\">$2</canvas>$3",
     "description": "HTML - Defines graphics",
     "scope": "text.html"
     },
     "caption": {
-    "prefix": "caption",
+    "prefix": "acaption",
     "body": "<caption>$1</caption>$2",
     "description": "HTML - Defines a table caption",
     "scope": "text.html"
     },
     "cite": {
-    "prefix": "cite",
+    "prefix": "acite",
     "body": "<cite>$1</cite>$2",
     "description": "HTML - Defines a citation",
     "scope": "text.html"
     },
     "code": {
-    "prefix": "code",
+    "prefix": "acode",
     "body": "<code>$1</code>$2",
     "description": "HTML - Defines computer code text",
     "scope": "text.html"
     },
     "col": {
-    "prefix": "col",
+    "prefix": "acol",
     "body": "<col>$2",
     "description": "HTML - Defines attributes for table columns",
     "scope": "text.html"
     },
     "colgroup": {
-    "prefix": "colgroup",
+    "prefix": "acolgroup",
     "body": [
         "<colgroup>",
         "\t$1",
@@ -170,13 +170,13 @@
     "scope": "text.html"
     },
     "command": {
-    "prefix": "command",
+    "prefix": "acommand",
     "body": "<command>$1</command>$2",
     "description": "HTML - Defines a command button [not supported]",
     "scope": "text.html"
     },
     "datalist": {
-    "prefix": "datalist",
+    "prefix": "adatalist",
     "body": [
         "<datalist>",
         "\t$1",
@@ -186,19 +186,19 @@
     "scope": "text.html"
     },
     "dd": {
-    "prefix": "dd",
+    "prefix": "add",
     "body": "<dd>$1</dd>$2",
     "description": "HTML - Defines a definition description",
     "scope": "text.html"
     },
     "del": {
-    "prefix": "del",
+    "prefix": "adel",
     "body": "<del>$1</del>$2",
     "description": "HTML - Defines deleted text",
     "scope": "text.html"
     },
     "details": {
-    "prefix": "details",
+    "prefix": "adetails",
     "body": [
         "<details>",
         "\t$1",
@@ -208,19 +208,19 @@
     "scope": "text.html"
     },
     "dialog": {
-    "prefix": "dialog",
+    "prefix": "adialog",
     "body": "<dialog>$1</dialog>$2",
     "description": "HTML - Defines a dialog (conversation)",
     "scope": "text.html"
     },
     "dfn": {
-    "prefix": "dfn",
+    "prefix": "adfn",
     "body": "<dfn>$1</dfn>$2",
     "description": "HTML - Defines a definition term",
     "scope": "text.html"
     },
     "div": {
-    "prefix": "div",
+    "prefix": "adiv",
     "body": [
         "<div>",
         "\t$1",
@@ -230,7 +230,7 @@
     "scope": "text.html"
     },
     "dl": {
-    "prefix": "dl",
+    "prefix": "adl",
     "body": [
         "<dl>",
         "\t$1",
@@ -240,25 +240,25 @@
     "scope": "text.html"
     },
     "dt": {
-    "prefix": "dt",
+    "prefix": "adt",
     "body": "<dt>$1</dt>$2",
     "description": "HTML - Defines a definition term",
     "scope": "text.html"
     },
     "em": {
-    "prefix": "em",
+    "prefix": "aem",
     "body": "<em>$1</em>$2",
     "description": "HTML - Defines emphasized text",
     "scope": "text.html"
     },
     "embed": {
-    "prefix": "embed",
+    "prefix": "aembed",
     "body": "<embed src=\"$1\">$2",
     "description": "HTML - Defines external interactive content ot plugin",
     "scope": "text.html"
     },
     "fieldset": {
-    "prefix": "fieldset",
+    "prefix": "afieldset",
     "body": [
         "<fieldset>",
         "\t$1",
@@ -267,13 +267,13 @@
     "scope": "text.html"
     },
     "figcaption": {
-    "prefix": "figcaption",
+    "prefix": "afigcaption",
     "body": "<figcaption>$1</figcaption>$2",
     "description": "HTML - Defines a caption for a figure",
     "scope": "text.html"
     },
     "figure": {
-    "prefix": "figure",
+    "prefix": "afigure",
     "body": [
         "<figure>",
         "\t$1",
@@ -283,7 +283,7 @@
     "scope": "text.html"
     },
     "footer": {
-    "prefix": "footer",
+    "prefix": "afooter",
     "body": [
         "<footer>",
         "\t$1",
@@ -293,7 +293,7 @@
     "scope": "text.html"
     },
     "form": {
-    "prefix": "form",
+    "prefix": "aform",
     "body": [
         "<form>",
         "\t$1",
@@ -303,43 +303,43 @@
     "scope": "text.html"
     },
     "h1": {
-    "prefix": "h1",
+    "prefix": "ah1",
     "body": "<h1>$1</h1>$2",
     "description": "HTML - Defines header 1",
     "scope": "text.html"
     },
     "h2": {
-    "prefix": "h2",
+    "prefix": "ah2",
     "body": "<h2>$1</h2>$2",
     "description": "HTML - Defines header 2",
     "scope": "text.html"
     },
     "h3": {
-    "prefix": "h3",
+    "prefix": "ah3",
     "body": "<h3>$1</h3>$2",
     "description": "HTML - Defines header 3",
     "scope": "text.html"
     },
     "h4": {
-    "prefix": "h4",
+    "prefix": "ah4",
     "body": "<h4>$1</h4>$2",
     "description": "HTML - Defines header 4",
     "scope": "text.html"
     },
     "h5": {
-    "prefix": "h5",
+    "prefix": "ah5",
     "body": "<h5>$1</h5>$2",
     "description": "HTML - Defines header 5",
     "scope": "text.html"
     },
     "h6": {
-    "prefix": "h6",
+    "prefix": "ah6",
     "body": "<h6>$1</h6>$2",
     "description": "HTML - Defines header 6",
     "scope": "text.html"
     },
     "head": {
-    "prefix": "head",
+    "prefix": "ahead",
     "body": [
         "<head>",
         "\t$1",
@@ -349,7 +349,7 @@
     "scope": "text.html"
     },
     "header": {
-    "prefix": "header",
+    "prefix": "aheader",
     "body": [
         "<header>",
         "\t$1",
@@ -359,7 +359,7 @@
     "scope": "text.html"
     },
     "hgroup": {
-    "prefix": "hgroup",
+    "prefix": "ahgroup",
     "body": [
         "<hgroup>",
         "\t$1",
@@ -369,13 +369,13 @@
     "scope": "text.html"
     },
     "hr": {
-    "prefix": "hr",
+    "prefix": "ahr",
     "body": "<hr>",
     "description": "HTML - Defines a horizontal rule",
     "scope": "text.html"
     },
     "html": {
-    "prefix": "html",
+    "prefix": "ahtml",
     "body": [
         "<html>",
         "\t$1",
@@ -385,7 +385,7 @@
     "scope": "text.html"
     },
     "html5": {
-    "prefix": "html5",
+    "prefix": "ahtml5",
     "body": [
         "<!DOCTYPE html>",
         "<html lang=\"$1en\">",
@@ -404,73 +404,73 @@
     "scope": "text.html"
     },
     "i": {
-    "prefix": "i",
+    "prefix": "ai",
     "body": "<i>$1</i>$2",
     "description": "HTML - Defines italic text",
     "scope": "text.html"
     },
     "iframe": {
-    "prefix": "iframe",
+    "prefix": "aiframe",
     "body": "<iframe src=\"$1\">$2</iframe>$3",
     "description": "HTML - Defines an inline sub window",
     "scope": "text.html"
     },
     "img": {
-    "prefix": "img",
+    "prefix": "aimg",
     "body": "<img src=\"$1\" alt=\"$2\">$3",
     "description": "HTML - Defines an image",
     "scope": "text.html"
     },
     "input": {
-    "prefix": "input",
+    "prefix": "ainput",
     "body": "<input type=\"$1\" name=\"$2\" value=\"$3\">$4",
     "description": "HTML - Defines an input field",
     "scope": "text.html"
     },
     "ins": {
-    "prefix": "ins",
+    "prefix": "ains",
     "body": "<ins>$1</ins>$2",
     "description": "HTML - Defines inserted text",
     "scope": "text.html"
     },
     "keygen": {
-    "prefix": "keygen",
+    "prefix": "akeygen",
     "body": "<keygen name=\"$1\">$2",
     "description": "HTML - Defines a generated key in a form",
     "scope": "text.html"
     },
     "kbd": {
-    "prefix": "kbd",
+    "prefix": "akbd",
     "body": "<kbd>$1</kbd>$2",
     "description": "HTML - Defines keyboard text",
     "scope": "text.html"
     },
     "label": {
-    "prefix": "label",
+    "prefix": "alabel",
     "body": "<label for=\"$1\">$2</label>$3",
     "description": "HTML - Defines an inline window",
     "scope": "text.html"
     },
     "legend": {
-    "prefix": "legend",
+    "prefix": "alegend",
     "body": "<legend>$1</legend>$2",
     "description": "HTML - Defines a title in a fieldset",
     "scope": "text.html"
     },
     "li": {
-    "prefix": "li",
+    "prefix": "ali",
     "body": "<li>$1</li>$2",
     "description": "HTML - Defines a list item",
     "scope": "text.html"
     },
     "link": {
-    "prefix": "link",
+    "prefix": "alink",
     "body": "<link rel=\"$1\" type=\"$2\" href=\"$3\">$4",
     "description": "HTML - Defines a resource reference",
     "scope": "text.html"
     },
     "main": {
-    "prefix": "main",
+    "prefix": "amain",
     "body": [
         "<main>",
         "\t$1",
@@ -480,7 +480,7 @@
     "scope": "text.html"
     },
     "map": {
-    "prefix": "map",
+    "prefix": "amap",
     "body": [
         "<map name=\"$1\">",
         "\t$2",
@@ -489,13 +489,13 @@
     "scope": "text.html"
     },
     "mark": {
-    "prefix": "mark",
+    "prefix": "amark",
     "body": "<mark>$1</mark>$2",
     "description": "HTML - Defines marked text",
     "scope": "text.html"
     },
     "menu": {
-    "prefix": "menu",
+    "prefix": "amenu",
     "body": [
         "<menu>",
         "\t$1",
@@ -505,25 +505,25 @@
     "scope": "text.html"
     },
     "menuitem": {
-    "prefix": "menuitem",
+    "prefix": "amenuitem",
     "body": "<menuitem>$1</menuitem>$2",
     "description": "HTML - Defines a menu item [firefox only]",
     "scope": "text.html"
     },
     "meta": {
-    "prefix": "meta",
+    "prefix": "ameta",
     "body": "<meta name=\"$1\" content=\"$2\">$3",
     "description": "HTML - Defines meta information",
     "scope": "text.html"
     },
     "meter": {
-    "prefix": "meter",
+    "prefix": "ameter",
     "body": "<meter value=\"$1\">$2</meter>$3",
     "description": "HTML - Defines measurement within a predefined range",
     "scope": "text.html"
     },
     "nav": {
-    "prefix": "nav",
+    "prefix": "anav",
     "body": [
         "<nav>",
         "\t$1",
@@ -533,7 +533,7 @@
     "scope": "text.html"
     },
     "noscript": {
-    "prefix": "noscript",
+    "prefix": "anoscript",
     "body": [
         "<noscript>",
         "$1",
@@ -543,13 +543,13 @@
     "scope": "text.html"
     },
     "object": {
-    "prefix": "object",
+    "prefix": "aobject",
     "body": "<object width=\"$1\" height=\"$2\" data=\"$3\">$4</object>$5",
     "description": "HTML - Defines an embedded object",
     "scope": "text.html"
     },
     "ol": {
-    "prefix": "ol",
+    "prefix": "aol",
     "body": [
         "<ol>",
         "\t$1",
@@ -559,7 +559,7 @@
     "scope": "text.html"
     },
     "optgroup": {
-    "prefix": "optgroup",
+    "prefix": "aoptgroup",
     "body": [
         "<optgroup>",
         "\t$1",
@@ -569,31 +569,31 @@
     "scope": "text.html"
     },
     "option": {
-    "prefix": "option",
+    "prefix": "aoption",
     "body": "<option value=\"$1\">$2</option>$3",
     "description": "HTML - Defines an option in a drop-down list",
     "scope": "text.html"
     },
     "output": {
-    "prefix": "output",
+    "prefix": "aoutput",
     "body": "<output name=\"$1\" for=\"$2\">$3</output>$4",
     "description": "HTML - Defines some types of output",
     "scope": "text.html"
     },
     "p": {
-    "prefix": "p",
+    "prefix": "ap",
     "body": "<p>$1</p>$2",
     "description": "HTML - Defines a paragraph",
     "scope": "text.html"
     },
     "param": {
-    "prefix": "param",
+    "prefix": "aparam",
     "body": "<param name=\"$1\" value=\"$2\">$3",
     "description": "HTML - Defines a parameter for an object",
     "scope": "text.html"
     },
     "pre": {
-    "prefix": "pre",
+    "prefix": "apre",
     "body": [
         "<pre>$1</pre>"
         ],
@@ -601,31 +601,31 @@
     "scope": "text.html"
     },
     "progress": {
-    "prefix": "progress",
+    "prefix": "aprogress",
     "body": "<progress value=\"$1\" max=\"$2\">$3</progress>$4",
     "description": "HTML - Defines progress of a task of any kind",
     "scope": "text.html"
     },
     "q": {
-    "prefix": "q",
+    "prefix": "aq",
     "body": "<q>$1</q>$2",
     "description": "HTML - Defines a short quotation",
     "scope": "text.html"
     },
     "rp": {
-    "prefix": "rp",
+    "prefix": "arp",
     "body": "<rp>$1</rp>$2",
     "description": "HTML - Used in ruby annotations to define what to show browsers that do not support the ruby element",
     "scope": "text.html"
     },
     "rt": {
-    "prefix": "rt",
+    "prefix": "art",
     "body": "<rt>$1</rt>$2",
     "description": "HTML - Defines explanation to ruby annotations",
     "scope": "text.html"
     },
     "ruby": {
-    "prefix": "ruby",
+    "prefix": "aruby",
     "body": [
         "<ruby>",
         "$1",
@@ -635,19 +635,19 @@
     "scope": "text.html"
     },
     "s": {
-    "prefix": "s",
+    "prefix": "as",
     "body": "<s>$1</s>$2",
     "description": "HTML - Used to define strikethrough text",
     "scope": "text.html"
     },
     "samp": {
-    "prefix": "samp",
+    "prefix": "asamp",
     "body": "<samp>$1</samp>$2",
     "description": "HTML - Defines sample computer code",
     "scope": "text.html"
     },
     "script": {
-    "prefix": "script",
+    "prefix": "ascript",
     "body": [
         "<script>",
         "\t$1",
@@ -657,7 +657,7 @@
     "scope": "text.html"
     },
     "section": {
-    "prefix": "section",
+    "prefix": "asection",
     "body": [
         "<section>",
         "\t$1",
@@ -667,7 +667,7 @@
     "scope": "text.html"
     },
     "select": {
-    "prefix": "select",
+    "prefix": "aselect",
     "body": [
         "<select>",
         "\t$1",
@@ -677,31 +677,31 @@
     "scope": "text.html"
     },
     "small": {
-    "prefix": "small",
+    "prefix": "asmall",
     "body": "<small>$1</small>$2",
     "description": "HTML - Defines small text",
     "scope": "text.html"
     },
     "source": {
-    "prefix": "source",
+    "prefix": "asource",
     "body": "<source src=\"$1\" type=\"$2\">$3",
     "description": "HTML - Defines media resource",
     "scope": "text.html"
     },
     "span": {
-    "prefix": "span",
+    "prefix": "aspan",
     "body": "<span>$1</span>$2",
     "description": "HTML - Defines a section in a document",
     "scope": "text.html"
     },
     "strong": {
-    "prefix": "strong",
+    "prefix": "astrong",
     "body": "<strong>$1</strong>$2",
     "description": "HTML - Defines strong text",
     "scope": "text.html"
     },
     "style": {
-    "prefix": "style",
+    "prefix": "astyle",
     "body": [
         "<style>",
         "$1",
@@ -711,25 +711,25 @@
     "scope": "text.html"
     },
     "sub": {
-    "prefix": "sub",
+    "prefix": "asub",
     "body": "<sub>$1</sub>$2",
     "description": "HTML - Defines sub-scripted text",
     "scope": "text.html"
     },
     "sup": {
-    "prefix": "sup",
+    "prefix": "asup",
     "body": "<sup>$1</sup>$2",
     "description": "HTML - Defines super-scripted text",
     "scope": "text.html"
     },
     "summary": {
-    "prefix": "summary",
+    "prefix": "asummary",
     "body": "<summary>$1</summary>$2",
     "description": "HTML - Defines a visible heading for the detail element [limited support]",
     "scope": "text.html"
     },
     "table": {
-    "prefix": "table",
+    "prefix": "atable",
     "body": [
         "<table>",
         "\t$1",
@@ -739,7 +739,7 @@
     "scope": "text.html"
     },
     "tbody": {
-    "prefix": "tbody",
+    "prefix": "atbody",
     "body": [
         "<tbody>",
         "\t$1",
@@ -749,19 +749,19 @@
     "scope": "text.html"
     },
     "td": {
-    "prefix": "td",
+    "prefix": "atd",
     "body": "<td>$1</td>$2",
     "description": "HTML - Defines a table cell",
     "scope": "text.html"
     },
     "textarea": {
-    "prefix": "textarea",
+    "prefix": "atextarea",
     "body": "<textarea rows=\"$1\" cols=\"$2\">$3</textarea>$4",
     "description": "HTML - Defines a text area",
     "scope": "text.html"
     },
     "tfoot": {
-    "prefix": "tfoot",
+    "prefix": "atfoot",
     "body": [
         "<tfoot>",
         "\t$1",
@@ -771,7 +771,7 @@
     "scope": "text.html"
     },
     "thead": {
-    "prefix": "thead",
+    "prefix": "athead",
     "body": [
         "<thead>",
         "$1",
@@ -781,43 +781,43 @@
     "scope": "text.html"
     },
     "th": {
-    "prefix": "th",
+    "prefix": "ath",
     "body": "<th>$1</th>$2",
     "description": "HTML - Defines a table header",
     "scope": "text.html"
     },
     "time": {
-    "prefix": "time",
+    "prefix": "atime",
     "body": "<time datetime=\"$1\">$2</time>$3",
     "description": "HTML - Defines a date/time",
     "scope": "text.html"
     },
     "title": {
-    "prefix": "title",
+    "prefix": "atitle",
     "body": "<title>$1</title>$2",
     "description": "HTML - Defines the document title",
     "scope": "text.html"
     },
     "tr": {
-    "prefix": "tr",
+    "prefix": "atr",
     "body": "<tr>$1</tr>$2",
     "description": "HTML - Defines a table row",
     "scope": "text.html"
     },
     "track": {
-    "prefix": "track",
+    "prefix": "atrack",
     "body": "<track src=\"$1\" kind=\"$2\" srclang=\"$3\" label=\"$4\">$5",
     "description": "HTML - Defines a table row",
     "scope": "text.html"
     },
     "u": {
-    "prefix": "u",
+    "prefix": "au",
     "body": "<u>$1</u>$2",
     "description": "HTML - Used to define underlined text",
     "scope": "text.html"
     },
     "ul": {
-    "prefix": "ul",
+    "prefix": "aul",
     "body": [
         "<ul>",
         "\t$1",
@@ -827,13 +827,13 @@
     "scope": "text.html"
     },
     "var": {
-    "prefix": "var",
+    "prefix": "avar",
     "body": "<var>$1</var>$2",
     "description": "HTML - Defines a variable",
     "scope": "text.html"
     },
     "video": {
-    "prefix": "video",
+    "prefix": "avideo",
     "body": [
         "<video width=\"$1\" height=\"$2\" controls>",
         "\t$3",
