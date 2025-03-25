@@ -1,0 +1,70 @@
+{
+    "html_doctype": {
+        "prefix": "aadoctype",
+        "body": "<!DOCTYPE html>",
+        "description": "HTML5 doctype declaration",
+        "scope": "text.html"
+    },
+    "html_boilerplate": {
+        "prefix": "aahtml5",
+        "body": [
+            "<!DOCTYPE html>",
+            "<html lang=\"${1:en}\">",
+            "<head>",
+            "\t<meta charset=\"UTF-8\">",
+            "\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+            "\t<meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">",
+            "\t<title>${2:Document}</title>",
+            "\t<link rel=\"stylesheet\" href=\"${3:styles.css}\">",
+            "</head>",
+            "<body>",
+            "\t${0}",
+            "</body>",
+            "</html>"
+        ],
+        "description": "Complete HTML5 boilerplate with responsive meta tags",
+        "scope": "text.html"
+    },
+    "html_link": {
+        "prefix": "aalink",
+        "body": "<a href=\"${1:#}\" class=\"${2:link}\">${3:Link text}</a>",
+        "description": "HTML link with class",
+        "scope": "text.html"
+    },
+    "html_image": {
+        "prefix": "aaimg",
+        "body": "<img src=\"${1:image.jpg}\" alt=\"${2:description}\" class=\"${3:img-fluid}\">",
+        "description": "HTML image with class",
+        "scope": "text.html"
+    },
+    "html_paragraph": {
+        "prefix": "aap",
+        "body": "<p class=\"${1:text}\">${2:content}</p>",
+        "description": "HTML paragraph with class",
+        "scope": "text.html"
+    },
+    "html_list_unordered": {
+        "prefix": "aaul",
+        "body": [
+            "<ul class=\"${1:list}\">",
+            "\t<li>${2:First item}</li>",
+            "\t<li>${3:Second item}</li>",
+            "\t<li>${4:Third item}</li>",
+            "</ul>"
+        ],
+        "description": "HTML unordered list with items",
+        "scope": "text.html"
+    },
+    "html_list_ordered": {
+        "prefix": "aaol",
+        "body": [
+            "<ol class=\"${1:list}\">",
+            "\t<li>${2:First item}</li>",
+            "\t<li>${3:Second item}</li>",
+            "\t<li>${4:Third item}</li>",
+            "</ol>"
+        ],
+        "description": "HTML ordered list with items",
+        "scope": "text.html"
+    }
+} 
