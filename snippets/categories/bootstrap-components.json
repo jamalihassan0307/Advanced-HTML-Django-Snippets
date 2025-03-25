@@ -1,6 +1,6 @@
 {
     "bootstrap_card": {
-        "prefix": "aacard",
+        "prefix": "bcard",
         "body": [
             "<div class=\"card\">",
             "\t<img src=\"${1:image.jpg}\" alt=\"${2:alt-text}\" class=\"card-img\">",
@@ -15,7 +15,7 @@
         "scope": "text.html"
     },
     "bootstrap_card_full": {
-        "prefix": "aacardplus",
+        "prefix": "bcardplus",
         "body": [
             "<div class=\"card shadow-sm\">",
             "\t<div class=\"card-header bg-${1:primary} text-white\">",
@@ -35,7 +35,7 @@
         "scope": "text.html"
     },
     "bootstrap_navbar": {
-        "prefix": "aanavbar",
+        "prefix": "bnav",
         "body": [
             "<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">",
             "\t<div class=\"container-fluid\">",
@@ -60,7 +60,7 @@
         "scope": "text.html"
     },
     "bootstrap_navbar_search": {
-        "prefix": "aanavbarsearch",
+        "prefix": "bnavsearch",
         "body": [
             "<nav class=\"navbar navbar-expand-lg navbar-dark bg-${1:primary}\">",
             "\t<div class=\"container-fluid\">",
@@ -86,7 +86,7 @@
         "scope": "text.html"
     },
     "bootstrap_modal": {
-        "prefix": "aamodal",
+        "prefix": "bmodal",
         "body": [
             "<div class=\"modal fade\" id=\"${1:modalId}\" tabindex=\"-1\" aria-labelledby=\"${2:modalLabel}\" aria-hidden=\"true\">",
             "\t<div class=\"modal-dialog\">",
@@ -110,7 +110,7 @@
         "scope": "text.html"
     },
     "bootstrap_alert": {
-        "prefix": "aaalert",
+        "prefix": "balert",
         "body": [
             "<div class=\"alert alert-${1:primary} alert-dismissible fade show\" role=\"alert\">",
             "\t${2:Alert message}",
@@ -121,7 +121,7 @@
         "scope": "text.html"
     },
     "bootstrap_toast": {
-        "prefix": "aatoast",
+        "prefix": "btoast",
         "body": [
             "<div class=\"toast\" role=\"alert\" aria-live=\"polite\" aria-atomic=\"true\">",
             "\t<div class=\"toast-header\">",
@@ -138,7 +138,7 @@
         "scope": "text.html"
     },
     "bootstrap_tabs": {
-        "prefix": "aatabs",
+        "prefix": "btabs",
         "body": [
             "<ul class=\"nav nav-tabs\" id=\"${1:myTab}\" role=\"tablist\">",
             "\t<li class=\"nav-item\" role=\"presentation\">",
