@@ -1,0 +1,35 @@
+{
+	"name": "ahtml-django-snippets",
+	"displayName": "aHTML Django Snippets",
+	"description": "Pre-built aHTML snippets with Django template tags ({% %}, {{ }}). No setup, just speed!",
+	"version": "0.0.1",
+	"publisher": "jamalihassan0307",
+	"icon": "images/logo.png",
+	"engines": {
+		"vscode": "^1.9.1"
+	},
+	"galleryBanner": {
+		"color": "#1E81C1",
+		"theme": "light"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "html",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	},
+	"license": "MIT",
+	"bugs": {
+			"url": "https://github.com/abusaidm/html-snippets/issues"
+	},
+	"repository": {
+			"type": "git",
+			"url": "https://github.com/abusaidm/html-snippets.git"
+	},
+	"homepage": "https://github.com/abusaidm/html-snippets/blob/master/README.md"
+}
