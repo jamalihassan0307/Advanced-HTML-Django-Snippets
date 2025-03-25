@@ -1,12 +1,12 @@
 {
     "html_doctype": {
-        "prefix": "ahdoc",
+        "prefix": "hdoc",
         "body": "<!DOCTYPE html>",
         "description": "HTML5 doctype declaration",
         "scope": "text.html"
     },
     "html_boilerplate": {
-        "prefix": "ahboiler",
+        "prefix": "hboiler",
         "body": [
             "<!DOCTYPE html>",
             "<html lang=\"${1:en}\">",
@@ -26,25 +26,25 @@
         "scope": "text.html"
     },
     "html_link": {
-        "prefix": "ahlink",
+        "prefix": "hlink",
         "body": "<a href=\"${1:#}\" class=\"${2:link}\">${3:Link text}</a>",
         "description": "HTML link with class",
         "scope": "text.html"
     },
     "html_image": {
-        "prefix": "ahimg",
+        "prefix": "himg",
         "body": "<img src=\"${1:image.jpg}\" alt=\"${2:description}\" class=\"${3:img-fluid}\">",
         "description": "HTML image with class",
         "scope": "text.html"
     },
     "html_paragraph": {
-        "prefix": "ahp",
+        "prefix": "hp",
         "body": "<p class=\"${1:text}\">${2:content}</p>",
         "description": "HTML paragraph with class",
         "scope": "text.html"
     },
     "html_list_unordered": {
-        "prefix": "ahul",
+        "prefix": "hul",
         "body": [
             "<ul class=\"${1:list}\">",
             "\t<li>${2:First item}</li>",
@@ -56,7 +56,7 @@
         "scope": "text.html"
     },
     "html_list_ordered": {
-        "prefix": "ahol",
+        "prefix": "hol",
         "body": [
             "<ol class=\"${1:list}\">",
             "\t<li>${2:First item}</li>",
@@ -65,6 +65,143 @@
             "</ol>"
         ],
         "description": "HTML ordered list with items",
+        "scope": "text.html"
+    },
+    "html_heading_1": {
+        "prefix": "hh1",
+        "body": "<h1 class=\"${1:title}\">${2:Heading 1}</h1>",
+        "description": "HTML h1 heading with class",
+        "scope": "text.html"
+    },
+    "html_heading_2": {
+        "prefix": "hh2",
+        "body": "<h2 class=\"${1:title}\">${2:Heading 2}</h2>",
+        "description": "HTML h2 heading with class",
+        "scope": "text.html"
+    },
+    "html_heading_3": {
+        "prefix": "hh3",
+        "body": "<h3 class=\"${1:title}\">${2:Heading 3}</h3>",
+        "description": "HTML h3 heading with class",
+        "scope": "text.html"
+    },
+    "html_div": {
+        "prefix": "hdiv",
+        "body": "<div class=\"${1:container}\">${2:content}</div>",
+        "description": "HTML div with class",
+        "scope": "text.html"
+    },
+    "html_span": {
+        "prefix": "hspan",
+        "body": "<span class=\"${1:text}\">${2:content}</span>",
+        "description": "HTML span with class",
+        "scope": "text.html"
+    },
+    "html_button": {
+        "prefix": "hbtn",
+        "body": "<button type=\"${1:button}\" class=\"${2:btn}\">${3:Button Text}</button>",
+        "description": "HTML button with class",
+        "scope": "text.html"
+    },
+    "html_table": {
+        "prefix": "htable",
+        "body": [
+            "<table class=\"${1:table}\">",
+            "\t<thead>",
+            "\t\t<tr>",
+            "\t\t\t<th>${2:Header 1}</th>",
+            "\t\t\t<th>${3:Header 2}</th>",
+            "\t\t</tr>",
+            "\t</thead>",
+            "\t<tbody>",
+            "\t\t<tr>",
+            "\t\t\t<td>${4:Data 1}</td>",
+            "\t\t\t<td>${5:Data 2}</td>",
+            "\t\t</tr>",
+            "\t</tbody>",
+            "</table>"
+        ],
+        "description": "HTML table structure with thead and tbody",
+        "scope": "text.html"
+    },
+    "html_article": {
+        "prefix": "harticle",
+        "body": [
+            "<article class=\"${1:article}\">",
+            "\t<h2>${2:Article Title}</h2>",
+            "\t${3:content}",
+            "</article>"
+        ],
+        "description": "HTML article with heading",
+        "scope": "text.html"
+    },
+    "html_aside": {
+        "prefix": "haside",
+        "body": [
+            "<aside class=\"${1:sidebar}\">",
+            "\t<h3>${2:Sidebar Title}</h3>",
+            "\t${3:content}",
+            "</aside>"
+        ],
+        "description": "HTML aside with heading",
+        "scope": "text.html"
+    },
+    "html_nav": {
+        "prefix": "hnav",
+        "body": [
+            "<nav class=\"${1:navigation}\">",
+            "\t<ul>",
+            "\t\t<li><a href=\"${2:#}\">${3:Link 1}</a></li>",
+            "\t\t<li><a href=\"${4:#}\">${5:Link 2}</a></li>",
+            "\t</ul>",
+            "</nav>"
+        ],
+        "description": "HTML navigation structure",
+        "scope": "text.html"
+    },
+    "html_main": {
+        "prefix": "hmain",
+        "body": [
+            "<main class=\"${1:main-content}\">",
+            "\t<h1>${2:Page Title}</h1>",
+            "\t${3:content}",
+            "</main>"
+        ],
+        "description": "HTML main content area",
+        "scope": "text.html"
+    },
+    "html_time": {
+        "prefix": "htime",
+        "body": "<time datetime=\"${1:2024-01-01}\">${2:January 1, 2024}</time>",
+        "description": "HTML time element with datetime attribute",
+        "scope": "text.html"
+    },
+    "html_figure": {
+        "prefix": "hfig",
+        "body": [
+            "<figure class=\"${1:figure}\">",
+            "\t<img src=\"${2:image.jpg}\" alt=\"${3:description}\" class=\"${4:img-fluid}\">",
+            "\t<figcaption>${5:Image caption}</figcaption>",
+            "</figure>"
+        ],
+        "description": "HTML figure with image and caption",
+        "scope": "text.html"
+    },
+    "html_details": {
+        "prefix": "hdetails",
+        "body": [
+            "<details>",
+            "\t<summary>${1:Summary Title}</summary>",
+            "\t${2:Detailed content}",
+            "</details>"
+        ],
+        "description": "HTML details and summary elements",
+        "scope": "text.html"
+    },
+    "html_mark": {
+        "prefix": "hmark",
+        "body": "<mark class=\"${1:highlight}\">${2:highlighted text}</mark>",
+        "description": "HTML mark element for highlighting text",
         "scope": "text.html"
     }
 } 
