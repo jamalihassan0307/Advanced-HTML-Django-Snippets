@@ -1,6 +1,6 @@
 {
     "meta_tags_seo": {
-        "prefix": "aaseo",
+        "prefix": "seometa",
         "body": [
             "<meta name=\"description\" content=\"${1:Page description}\">",
             "<meta name=\"keywords\" content=\"${2:keywords,separated,by,commas}\">",
@@ -15,13 +15,13 @@
         "scope": "text.html"
     },
     "meta_viewport": {
-        "prefix": "aavp",
+        "prefix": "seovp",
         "body": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
         "description": "Responsive viewport meta tag",
         "scope": "text.html"
     },
     "meta_charset": {
-        "prefix": "aacharset",
+        "prefix": "seocharset",
         "body": "<meta charset=\"UTF-8\">",
         "description": "UTF-8 charset meta tag",
         "scope": "text.html"
