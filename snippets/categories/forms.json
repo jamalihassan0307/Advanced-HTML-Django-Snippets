@@ -82,5 +82,201 @@
         ],
         "description": "Django form with crispy-forms",
         "scope": "text.html.django"
+    },
+    "html_form_group": {
+        "prefix": "afgroup",
+        "body": [
+            "<div class=\"form-group mb-3\">",
+            "\t<label for=\"${1:inputId}\" class=\"form-label\">${2:Label Text}</label>",
+            "\t${3:input_element}",
+            "\t<div class=\"form-text\">${4:Help text}</div>",
+            "</div>"
+        ],
+        "description": "HTML form group with Bootstrap classes",
+        "scope": "text.html"
+    },
+    "html_input_group": {
+        "prefix": "afinputgroup",
+        "body": [
+            "<div class=\"input-group mb-3\">",
+            "\t<span class=\"input-group-text\" id=\"${1:addonId}\">${2:@}</span>",
+            "\t<input type=\"text\" class=\"form-control\" placeholder=\"${3:Username}\" aria-label=\"${4:Username}\" aria-describedby=\"${1:addonId}\">",
+            "\t<button class=\"btn btn-outline-secondary\" type=\"button\">${5:Button}</button>",
+            "</div>"
+        ],
+        "description": "HTML input group with add-ons",
+        "scope": "text.html"
+    },
+    "html_form_validation": {
+        "prefix": "afvalidation",
+        "body": [
+            "<div class=\"form-group mb-3\">",
+            "\t<label for=\"${1:inputId}\" class=\"form-label\">${2:Label Text}</label>",
+            "\t<input type=\"${3:text}\" class=\"form-control is-${4:invalid}\" id=\"${1:inputId}\" required>",
+            "\t<div class=\"invalid-feedback\">",
+            "\t\t${5:Please provide a valid value.}",
+            "\t</div>",
+            "</div>"
+        ],
+        "description": "HTML form input with validation",
+        "scope": "text.html"
+    },
+    "html_form_range": {
+        "prefix": "afrange",
+        "body": [
+            "<div class=\"form-group mb-3\">",
+            "\t<label for=\"${1:rangeId}\" class=\"form-label\">${2:Range label}</label>",
+            "\t<input type=\"range\" class=\"form-range\" min=\"${3:0}\" max=\"${4:100}\" step=\"${5:1}\" id=\"${1:rangeId}\">",
+            "\t<div class=\"form-text\">${6:Current value: <span id=\"${1:rangeId}Value\">50</span>}</div>",
+            "</div>"
+        ],
+        "description": "HTML range input with Bootstrap classes",
+        "scope": "text.html"
+    },
+    "html_form_file": {
+        "prefix": "affile",
+        "body": [
+            "<div class=\"form-group mb-3\">",
+            "\t<label for=\"${1:fileId}\" class=\"form-label\">${2:File input}</label>",
+            "\t<input type=\"file\" class=\"form-control\" id=\"${1:fileId}\" accept=\"${3:.pdf,.doc,.docx}\">",
+            "\t<div class=\"form-text\">${4:Maximum file size: 5MB}</div>",
+            "</div>"
+        ],
+        "description": "HTML file input with Bootstrap classes",
+        "scope": "text.html"
+    },
+    "html_form_color": {
+        "prefix": "afcolor",
+        "body": [
+            "<div class=\"form-group mb-3\">",
+            "\t<label for=\"${1:colorId}\" class=\"form-label\">${2:Color picker}</label>",
+            "\t<input type=\"color\" class=\"form-control form-control-color\" id=\"${1:colorId}\" value=\"${3:#563d7c}\">",
+            "</div>"
+        ],
+        "description": "HTML color input with Bootstrap classes",
+        "scope": "text.html"
+    },
+    "html_form_date": {
+        "prefix": "afdate",
+        "body": [
+            "<div class=\"form-group mb-3\">",
+            "\t<label for=\"${1:dateId}\" class=\"form-label\">${2:Date picker}</label>",
+            "\t<input type=\"date\" class=\"form-control\" id=\"${1:dateId}\" min=\"${3:2024-01-01}\" max=\"${4:2024-12-31}\">",
+            "</div>"
+        ],
+        "description": "HTML date input with Bootstrap classes",
+        "scope": "text.html"
+    },
+    "html_form_time": {
+        "prefix": "aftime",
+        "body": [
+            "<div class=\"form-group mb-3\">",
+            "\t<label for=\"${1:timeId}\" class=\"form-label\">${2:Time picker}</label>",
+            "\t<input type=\"time\" class=\"form-control\" id=\"${1:timeId}\" step=\"${3:900}\">",
+            "</div>"
+        ],
+        "description": "HTML time input with Bootstrap classes",
+        "scope": "text.html"
+    },
+    "html_form_datetime": {
+        "prefix": "afdatetime",
+        "body": [
+            "<div class=\"form-group mb-3\">",
+            "\t<label for=\"${1:datetimeId}\" class=\"form-label\">${2:Date and time picker}</label>",
+            "\t<input type=\"datetime-local\" class=\"form-control\" id=\"${1:datetimeId}\">",
+            "</div>"
+        ],
+        "description": "HTML datetime-local input with Bootstrap classes",
+        "scope": "text.html"
+    },
+    "html_form_month": {
+        "prefix": "afmonth",
+        "body": [
+            "<div class=\"form-group mb-3\">",
+            "\t<label for=\"${1:monthId}\" class=\"form-label\">${2:Month picker}</label>",
+            "\t<input type=\"month\" class=\"form-control\" id=\"${1:monthId}\">",
+            "</div>"
+        ],
+        "description": "HTML month input with Bootstrap classes",
+        "scope": "text.html"
+    },
+    "html_form_week": {
+        "prefix": "afweek",
+        "body": [
+            "<div class=\"form-group mb-3\">",
+            "\t<label for=\"${1:weekId}\" class=\"form-label\">${2:Week picker}</label>",
+            "\t<input type=\"week\" class=\"form-control\" id=\"${1:weekId}\">",
+            "</div>"
+        ],
+        "description": "HTML week input with Bootstrap classes",
+        "scope": "text.html"
+    },
+    "html_form_tel": {
+        "prefix": "aftel",
+        "body": [
+            "<div class=\"form-group mb-3\">",
+            "\t<label for=\"${1:telId}\" class=\"form-label\">${2:Phone number}</label>",
+            "\t<input type=\"tel\" class=\"form-control\" id=\"${1:telId}\" pattern=\"[0-9]{3}-[0-9]{3}-[0-9]{4}\" placeholder=\"${3:123-456-7890}\">",
+            "\t<div class=\"form-text\">${4:Format: 123-456-7890}</div>",
+            "</div>"
+        ],
+        "description": "HTML telephone input with Bootstrap classes",
+        "scope": "text.html"
+    },
+    "html_form_email": {
+        "prefix": "afemail",
+        "body": [
+            "<div class=\"form-group mb-3\">",
+            "\t<label for=\"${1:emailId}\" class=\"form-label\">${2:Email address}</label>",
+            "\t<input type=\"email\" class=\"form-control\" id=\"${1:emailId}\" placeholder=\"${3:name@example.com}\">",
+            "</div>"
+        ],
+        "description": "HTML email input with Bootstrap classes",
+        "scope": "text.html"
+    },
+    "html_form_url": {
+        "prefix": "afurl",
+        "body": [
+            "<div class=\"form-group mb-3\">",
+            "\t<label for=\"${1:urlId}\" class=\"form-label\">${2:URL}</label>",
+            "\t<input type=\"url\" class=\"form-control\" id=\"${1:urlId}\" placeholder=\"${3:https://example.com}\">",
+            "</div>"
+        ],
+        "description": "HTML URL input with Bootstrap classes",
+        "scope": "text.html"
+    },
+    "html_form_search": {
+        "prefix": "afsearch",
+        "body": [
+            "<div class=\"form-group mb-3\">",
+            "\t<label for=\"${1:searchId}\" class=\"form-label\">${2:Search}</label>",
+            "\t<input type=\"search\" class=\"form-control\" id=\"${1:searchId}\" placeholder=\"${3:Search...}\">",
+            "</div>"
+        ],
+        "description": "HTML search input with Bootstrap classes",
+        "scope": "text.html"
+    },
+    "html_form_number": {
+        "prefix": "afnumber",
+        "body": [
+            "<div class=\"form-group mb-3\">",
+            "\t<label for=\"${1:numberId}\" class=\"form-label\">${2:Number input}</label>",
+            "\t<input type=\"number\" class=\"form-control\" id=\"${1:numberId}\" min=\"${3:0}\" max=\"${4:100}\" step=\"${5:1}\">",
+            "</div>"
+        ],
+        "description": "HTML number input with Bootstrap classes",
+        "scope": "text.html"
+    },
+    "html_form_password": {
+        "prefix": "afpassword",
+        "body": [
+            "<div class=\"form-group mb-3\">",
+            "\t<label for=\"${1:passwordId}\" class=\"form-label\">${2:Password}</label>",
+            "\t<input type=\"password\" class=\"form-control\" id=\"${1:passwordId}\" minlength=\"${3:8}\">",
+            "\t<div class=\"form-text\">${4:Password must be at least 8 characters long}</div>",
+            "</div>"
+        ],
+        "description": "HTML password input with Bootstrap classes",
+        "scope": "text.html"
     }
 } 
