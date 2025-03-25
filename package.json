@@ -2,7 +2,7 @@
 	"name": "ahtml-django-snippets",
 	"displayName": "Advanced HTML & Django Snippets",
 	"description": "A comprehensive collection of HTML, Bootstrap 5, and Django template snippets",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"publisher": "jamalihassan0307",
 	"engines": {
 		"vscode": "^1.60.0"
