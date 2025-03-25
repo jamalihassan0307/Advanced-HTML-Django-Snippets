@@ -1,6 +1,6 @@
 {
     "html_form_input": {
-        "prefix": "aainput",
+        "prefix": "finput",
         "body": [
             "<div class=\"form-group\">",
             "\t<label for=\"${1:inputId}\">${2:Label Text}</label>",
@@ -11,7 +11,7 @@
         "scope": "text.html"
     },
     "html_textarea": {
-        "prefix": "aatextarea",
+        "prefix": "ftextarea",
         "body": [
             "<div class=\"form-group\">",
             "\t<label for=\"${1:textareaId}\">${2:Label Text}</label>",
@@ -22,7 +22,7 @@
         "scope": "text.html"
     },
     "html_select": {
-        "prefix": "aaselect",
+        "prefix": "fselect",
         "body": [
             "<div class=\"form-group\">",
             "\t<label for=\"${1:selectId}\">${2:Label Text}</label>",
@@ -37,7 +37,7 @@
         "scope": "text.html"
     },
     "html_checkbox": {
-        "prefix": "aacheckbox",
+        "prefix": "fcheck",
         "body": [
             "<div class=\"form-check\">",
             "\t<input type=\"checkbox\" class=\"form-check-input\" id=\"${1:checkboxId}\" name=\"${2:checkboxName}\">",
@@ -48,7 +48,7 @@
         "scope": "text.html"
     },
     "html_radio": {
-        "prefix": "aaradio",
+        "prefix": "fradio",
         "body": [
             "<div class=\"form-check\">",
             "\t<input type=\"radio\" class=\"form-check-input\" id=\"${1:radioId}\" name=\"${2:radioName}\">",
