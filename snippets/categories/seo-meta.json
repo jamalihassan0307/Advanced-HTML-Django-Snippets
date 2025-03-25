@@ -1,0 +1,29 @@
+{
+    "meta_tags_seo": {
+        "prefix": "aaseo",
+        "body": [
+            "<meta name=\"description\" content=\"${1:Page description}\">",
+            "<meta name=\"keywords\" content=\"${2:keywords,separated,by,commas}\">",
+            "<meta name=\"author\" content=\"${3:Author name}\">",
+            "<meta property=\"og:title\" content=\"${4:Title}\">",
+            "<meta property=\"og:description\" content=\"${1:Page description}\">",
+            "<meta property=\"og:image\" content=\"${5:image-url}\">",
+            "<meta property=\"og:url\" content=\"${6:page-url}\">",
+            "<meta name=\"twitter:card\" content=\"summary_large_image\">"
+        ],
+        "description": "Common SEO meta tags",
+        "scope": "text.html"
+    },
+    "meta_viewport": {
+        "prefix": "aavp",
+        "body": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+        "description": "Responsive viewport meta tag",
+        "scope": "text.html"
+    },
+    "meta_charset": {
+        "prefix": "aacharset",
+        "body": "<meta charset=\"UTF-8\">",
+        "description": "UTF-8 charset meta tag",
+        "scope": "text.html"
+    }
+} 
