@@ -307,6 +307,194 @@
         ],
         "description": "Bootstrap 5 tabs component",
         "scope": "text.html"
-    }
+    },
 
-  }
+    "html_link": {
+        "prefix": "aalink",
+        "body": "<a href=\"${1:#}\" class=\"${2:link}\">${3:Link text}</a>",
+        "description": "HTML link with class",
+        "scope": "text.html"
+    },
+
+    "html_image": {
+        "prefix": "aaimg",
+        "body": "<img src=\"${1:image.jpg}\" alt=\"${2:description}\" class=\"${3:img-fluid}\">",
+        "description": "HTML image with class",
+        "scope": "text.html"
+    },
+
+    "html_paragraph": {
+        "prefix": "aap",
+        "body": "<p class=\"${1:text}\">${2:content}</p>",
+        "description": "HTML paragraph with class",
+        "scope": "text.html"
+    },
+
+    "html_button": {
+        "prefix": "aabtn",
+        "body": "<button type=\"${1:button}\" class=\"btn btn-${2:primary}\">${3:Button text}</button>",
+        "description": "HTML button with Bootstrap classes",
+        "scope": "text.html"
+    },
+
+    "html_div": {
+        "prefix": "aadiv",
+        "body": [
+            "<div class=\"${1:container}\">",
+            "\t${2:content}",
+            "</div>"
+        ],
+        "description": "HTML div with class",
+        "scope": "text.html"
+    },
+
+    "html_section": {
+        "prefix": "aasection",
+        "body": [
+            "<section class=\"${1:section}\">",
+            "\t<h2>${2:Section Title}</h2>",
+            "\t${3:content}",
+            "</section>"
+        ],
+        "description": "HTML section with heading",
+        "scope": "text.html"
+    },
+
+    "html_list_unordered": {
+        "prefix": "aaul",
+        "body": [
+            "<ul class=\"${1:list}\">",
+            "\t<li>${2:First item}</li>",
+            "\t<li>${3:Second item}</li>",
+            "\t<li>${4:Third item}</li>",
+            "</ul>"
+        ],
+        "description": "HTML unordered list with items",
+        "scope": "text.html"
+    },
+
+    "html_list_ordered": {
+        "prefix": "aaol",
+        "body": [
+            "<ol class=\"${1:list}\">",
+            "\t<li>${2:First item}</li>",
+            "\t<li>${3:Second item}</li>",
+            "\t<li>${4:Third item}</li>",
+            "</ol>"
+        ],
+        "description": "HTML ordered list with items",
+        "scope": "text.html"
+    },
+
+    "html_table": {
+        "prefix": "aatable",
+        "body": [
+            "<table class=\"table\">",
+            "\t<thead>",
+            "\t\t<tr>",
+            "\t\t\t<th>${1:Header 1}</th>",
+            "\t\t\t<th>${2:Header 2}</th>",
+            "\t\t\t<th>${3:Header 3}</th>",
+            "\t\t</tr>",
+            "\t</thead>",
+            "\t<tbody>",
+            "\t\t<tr>",
+            "\t\t\t<td>${4:Data 1}</td>",
+            "\t\t\t<td>${5:Data 2}</td>",
+            "\t\t\t<td>${6:Data 3}</td>",
+            "\t\t</tr>",
+            "\t</tbody>",
+            "</table>"
+        ],
+        "description": "HTML table with Bootstrap classes",
+        "scope": "text.html"
+    },
+
+    "html_form_input": {
+        "prefix": "aainput",
+        "body": [
+            "<div class=\"form-group\">",
+            "\t<label for=\"${1:inputId}\">${2:Label Text}</label>",
+            "\t<input type=\"${3:text}\" class=\"form-control\" id=\"${1:inputId}\" name=\"${4:inputName}\" placeholder=\"${5:Enter text}\">",
+            "</div>"
+        ],
+        "description": "HTML form input with Bootstrap classes",
+        "scope": "text.html"
+    },
+
+    "html_textarea": {
+        "prefix": "aatextarea",
+        "body": [
+            "<div class=\"form-group\">",
+            "\t<label for=\"${1:textareaId}\">${2:Label Text}</label>",
+            "\t<textarea class=\"form-control\" id=\"${1:textareaId}\" name=\"${3:textareaName}\" rows=\"${4:3}\">${5:}</textarea>",
+            "</div>"
+        ],
+        "description": "HTML textarea with Bootstrap classes",
+        "scope": "text.html"
+    },
+
+    "html_select": {
+        "prefix": "aaselect",
+        "body": [
+            "<div class=\"form-group\">",
+            "\t<label for=\"${1:selectId}\">${2:Label Text}</label>",
+            "\t<select class=\"form-control\" id=\"${1:selectId}\" name=\"${3:selectName}\">",
+            "\t\t<option value=\"${4:value1}\">${5:Option 1}</option>",
+            "\t\t<option value=\"${6:value2}\">${7:Option 2}</option>",
+            "\t\t<option value=\"${8:value3}\">${9:Option 3}</option>",
+            "\t</select>",
+            "</div>"
+        ],
+        "description": "HTML select with Bootstrap classes",
+        "scope": "text.html"
+    },
+
+    "html_checkbox": {
+        "prefix": "aacheckbox",
+        "body": [
+            "<div class=\"form-check\">",
+            "\t<input type=\"checkbox\" class=\"form-check-input\" id=\"${1:checkboxId}\" name=\"${2:checkboxName}\">",
+            "\t<label class=\"form-check-label\" for=\"${1:checkboxId}\">${3:Checkbox label}</label>",
+            "</div>"
+        ],
+        "description": "HTML checkbox with Bootstrap classes",
+        "scope": "text.html"
+    },
+
+    "html_radio": {
+        "prefix": "aaradio",
+        "body": [
+            "<div class=\"form-check\">",
+            "\t<input type=\"radio\" class=\"form-check-input\" id=\"${1:radioId}\" name=\"${2:radioName}\">",
+            "\t<label class=\"form-check-label\" for=\"${1:radioId}\">${3:Radio label}</label>",
+            "</div>"
+        ],
+        "description": "HTML radio with Bootstrap classes",
+        "scope": "text.html"
+    },
+
+    "html_header": {
+        "prefix": "aaheader",
+        "body": [
+            "<header class=\"${1:header}\">",
+            "\t<h1>${2:Page Title}</h1>",
+            "\t${3:content}",
+            "</header>"
+        ],
+        "description": "HTML header with content",
+        "scope": "text.html"
+    },
+
+    "html_footer": {
+        "prefix": "aafooter",
+        "body": [
+            "<footer class=\"${1:footer}\">",
+            "\t<p>&copy; ${2:2024} ${3:Your Company}. All rights reserved.</p>",
+            "\t${4:content}",
+            "</footer>"
+        ],
+        "description": "HTML footer with copyright",
+        "scope": "text.html"
+    }
+}
