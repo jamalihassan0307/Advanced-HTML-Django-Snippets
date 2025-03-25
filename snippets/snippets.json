@@ -496,5 +496,237 @@
         ],
         "description": "HTML footer with copyright",
         "scope": "text.html"
+    },
+
+    "django_csrf": {
+        "prefix": "aacsrf",
+        "body": "{% csrf_token %}",
+        "description": "Django CSRF token tag",
+        "scope": "text.html.django"
+    },
+
+    "django_load": {
+        "prefix": "aaload",
+        "body": "{% load ${1:static} %}",
+        "description": "Django load template tag",
+        "scope": "text.html.django"
+    },
+
+    "django_comment": {
+        "prefix": "aacomment",
+        "body": "{% comment %}${1:comment text}{% endcomment %}",
+        "description": "Django comment tag",
+        "scope": "text.html.django"
+    },
+
+    "django_with": {
+        "prefix": "aawith",
+        "body": [
+            "{% with ${1:variable}=${2:value} %}",
+            "\t${3:content}",
+            "{% endwith %}"
+        ],
+        "description": "Django with template tag",
+        "scope": "text.html.django"
+    },
+
+    "django_filter": {
+        "prefix": "aafilter",
+        "body": "{{ ${1:variable}|${2:filter}:${3:parameter} }}",
+        "description": "Django filter syntax",
+        "scope": "text.html.django"
+    },
+
+    "django_include_with": {
+        "prefix": "aaincludewith",
+        "body": "{% include '${1:template.html}' with ${2:variable}=${3:value} %}",
+        "description": "Django include with parameters",
+        "scope": "text.html.django"
+    },
+
+    "bootstrap_card_full": {
+        "prefix": "aacardplus",
+        "body": [
+            "<div class=\"card shadow-sm\">",
+            "\t<div class=\"card-header bg-${1:primary} text-white\">",
+            "\t\t<h5 class=\"card-title mb-0\">${2:Card Title}</h5>",
+            "\t</div>",
+            "\t<div class=\"card-body\">",
+            "\t\t<h6 class=\"card-subtitle mb-2 text-muted\">${3:Card Subtitle}</h6>",
+            "\t\t<p class=\"card-text\">${4:Card content goes here}</p>",
+            "\t\t<a href=\"${5:#}\" class=\"btn btn-${1:primary}\">${6:Learn More}</a>",
+            "\t</div>",
+            "\t<div class=\"card-footer text-muted\">",
+            "\t\t${7:Last updated 3 mins ago}",
+            "\t</div>",
+            "</div>"
+        ],
+        "description": "Bootstrap 5 card with header, body, and footer",
+        "scope": "text.html"
+    },
+
+    "bootstrap_grid_responsive": {
+        "prefix": "aagrid",
+        "body": [
+            "<div class=\"container\">",
+            "\t<div class=\"row\">",
+            "\t\t<div class=\"col-12 col-md-6 col-lg-4\">",
+            "\t\t\t${1:Column 1 content}",
+            "\t\t</div>",
+            "\t\t<div class=\"col-12 col-md-6 col-lg-4\">",
+            "\t\t\t${2:Column 2 content}",
+            "\t\t</div>",
+            "\t\t<div class=\"col-12 col-md-6 col-lg-4\">",
+            "\t\t\t${3:Column 3 content}",
+            "\t\t</div>",
+            "\t</div>",
+            "</div>"
+        ],
+        "description": "Bootstrap 5 responsive grid system",
+        "scope": "text.html"
+    },
+
+    "bootstrap_navbar_search": {
+        "prefix": "aanavbarsearch",
+        "body": [
+            "<nav class=\"navbar navbar-expand-lg navbar-dark bg-${1:primary}\">",
+            "\t<div class=\"container-fluid\">",
+            "\t\t<a class=\"navbar-brand\" href=\"#\">${2:Brand}</a>",
+            "\t\t<button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSearch\" aria-controls=\"navbarSearch\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+            "\t\t\t<span class=\"navbar-toggler-icon\"></span>",
+            "\t\t</button>",
+            "\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSearch\">",
+            "\t\t\t<ul class=\"navbar-nav me-auto mb-2 mb-lg-0\">",
+            "\t\t\t\t<li class=\"nav-item\">",
+            "\t\t\t\t\t<a class=\"nav-link active\" href=\"#\">Home</a>",
+            "\t\t\t\t</li>",
+            "\t\t\t</ul>",
+            "\t\t\t<form class=\"d-flex\">",
+            "\t\t\t\t<input class=\"form-control me-2\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">",
+            "\t\t\t\t<button class=\"btn btn-outline-light\" type=\"submit\">Search</button>",
+            "\t\t\t</form>",
+            "\t\t</div>",
+            "\t</div>",
+            "</nav>"
+        ],
+        "description": "Bootstrap 5 navbar with search form",
+        "scope": "text.html"
+    },
+
+    "bootstrap_pagination": {
+        "prefix": "aapagination",
+        "body": [
+            "<nav aria-label=\"Page navigation\">",
+            "\t<ul class=\"pagination justify-content-center\">",
+            "\t\t<li class=\"page-item disabled\">",
+            "\t\t\t<a class=\"page-link\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">Previous</a>",
+            "\t\t</li>",
+            "\t\t<li class=\"page-item active\" aria-current=\"page\">",
+            "\t\t\t<a class=\"page-link\" href=\"#\">1</a>",
+            "\t\t</li>",
+            "\t\t<li class=\"page-item\"><a class=\"page-link\" href=\"#\">2</a></li>",
+            "\t\t<li class=\"page-item\"><a class=\"page-link\" href=\"#\">3</a></li>",
+            "\t\t<li class=\"page-item\">",
+            "\t\t\t<a class=\"page-link\" href=\"#\">Next</a>",
+            "\t\t</li>",
+            "\t</ul>",
+            "</nav>"
+        ],
+        "description": "Bootstrap 5 pagination component",
+        "scope": "text.html"
+    },
+
+    "django_pagination": {
+        "prefix": "aadpagination",
+        "body": [
+            "{% if page_obj.has_other_pages %}",
+            "<nav aria-label=\"Page navigation\">",
+            "\t<ul class=\"pagination justify-content-center\">",
+            "\t\t{% if page_obj.has_previous %}",
+            "\t\t<li class=\"page-item\">",
+            "\t\t\t<a class=\"page-link\" href=\"?page={{ page_obj.previous_page_number }}\">Previous</a>",
+            "\t\t</li>",
+            "\t\t{% else %}",
+            "\t\t<li class=\"page-item disabled\">",
+            "\t\t\t<span class=\"page-link\">Previous</span>",
+            "\t\t</li>",
+            "\t\t{% endif %}",
+            "\t\t",
+            "\t\t{% for num in page_obj.paginator.page_range %}",
+            "\t\t\t{% if page_obj.number == num %}",
+            "\t\t\t<li class=\"page-item active\"><span class=\"page-link\">{{ num }}</span></li>",
+            "\t\t\t{% else %}",
+            "\t\t\t<li class=\"page-item\"><a class=\"page-link\" href=\"?page={{ num }}\">{{ num }}</a></li>",
+            "\t\t\t{% endif %}",
+            "\t\t{% endfor %}",
+            "\t\t",
+            "\t\t{% if page_obj.has_next %}",
+            "\t\t<li class=\"page-item\">",
+            "\t\t\t<a class=\"page-link\" href=\"?page={{ page_obj.next_page_number }}\">Next</a>",
+            "\t\t</li>",
+            "\t\t{% else %}",
+            "\t\t<li class=\"page-item disabled\">",
+            "\t\t\t<span class=\"page-link\">Next</span>",
+            "\t\t</li>",
+            "\t\t{% endif %}",
+            "\t</ul>",
+            "</nav>",
+            "{% endif %}"
+        ],
+        "description": "Django pagination with Bootstrap 5",
+        "scope": "text.html.django"
+    },
+
+    "bootstrap_toast": {
+        "prefix": "aatoast",
+        "body": [
+            "<div class=\"toast\" role=\"alert\" aria-live=\"polite\" aria-atomic=\"true\">",
+            "\t<div class=\"toast-header\">",
+            "\t\t<strong class=\"me-auto\">${1:Title}</strong>",
+            "\t\t<small>${2:11 mins ago}</small>",
+            "\t\t<button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"toast\" aria-label=\"Close\"></button>",
+            "\t</div>",
+            "\t<div class=\"toast-body\">",
+            "\t\t${3:Toast message goes here}",
+            "\t</div>",
+            "</div>"
+        ],
+        "description": "Bootstrap 5 toast component",
+        "scope": "text.html"
+    },
+
+    "meta_tags_seo": {
+        "prefix": "aaseo",
+        "body": [
+            "<meta name=\"description\" content=\"${1:Page description}\">",
+            "<meta name=\"keywords\" content=\"${2:keywords,separated,by,commas}\">",
+            "<meta name=\"author\" content=\"${3:Author name}\">",
+            "<meta property=\"og:title\" content=\"${4:Title}\">",
+            "<meta property=\"og:description\" content=\"${1:Page description}\">",
+            "<meta property=\"og:image\" content=\"${5:image-url}\">",
+            "<meta property=\"og:url\" content=\"${6:page-url}\">",
+            "<meta name=\"twitter:card\" content=\"summary_large_image\">"
+        ],
+        "description": "Common SEO meta tags",
+        "scope": "text.html"
+    },
+
+    "responsive_hero": {
+        "prefix": "aahero",
+        "body": [
+            "<div class=\"px-4 py-5 my-5 text-center\">",
+            "\t<img class=\"d-block mx-auto mb-4\" src=\"${1:logo.svg}\" alt=\"${2:Logo}\" width=\"${3:72}\" height=\"${4:57}\">",
+            "\t<h1 class=\"display-5 fw-bold\">${5:Hero Title}</h1>",
+            "\t<div class=\"col-lg-6 mx-auto\">",
+            "\t\t<p class=\"lead mb-4\">${6:Hero description text goes here}</p>",
+            "\t\t<div class=\"d-grid gap-2 d-sm-flex justify-content-sm-center\">",
+            "\t\t\t<button type=\"button\" class=\"btn btn-primary btn-lg px-4 gap-3\">${7:Primary Action}</button>",
+            "\t\t\t<button type=\"button\" class=\"btn btn-outline-secondary btn-lg px-4\">${8:Secondary Action}</button>",
+            "\t\t</div>",
+            "\t</div>",
+            "</div>"
+        ],
+        "description": "Bootstrap 5 hero section",
+        "scope": "text.html"
     }
 }
