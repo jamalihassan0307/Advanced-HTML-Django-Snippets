@@ -78,13 +78,31 @@
         "body": "<h2 class=\"${1:title}\">${2:Heading 2}</h2>",
         "description": "HTML h2 heading with class",
         "scope": "text.html"
-    },
-    "html_heading_3": {
+    }, "html_heading_3": {
         "prefix": "ahh3",
         "body": "<h3 class=\"${1:title}\">${2:Heading 3}</h3>",
         "description": "HTML h3 heading with class",
         "scope": "text.html"
     },
+    "html_heading_4": {
+        "prefix": "ahh4",
+        "body": "<h4 class=\"${1:title}\">${2:Heading 4}</h4>",
+        "description": "HTML h4 heading with class",
+        "scope": "text.html"
+    },
+    "html_heading_5": {
+        "prefix": "ahh5",
+        "body": "<h5 class=\"${1:title}\">${2:Heading 5}</h5>",
+        "description": "HTML h5 heading with class",
+        "scope": "text.html"
+    },
+    "html_heading_6": {
+        "prefix": "ahh6",
+        "body": "<h6 class=\"${1:title}\">${2:Heading 6}</h6>",
+        "description": "HTML h6 heading with class",
+        "scope": "text.html"
+    },
+   
     "html_div": {
         "prefix": "ahdiv",
         "body": "<div class=\"${1:container}\">${2:content}</div>",
