@@ -728,5 +728,15 @@
         ],
         "description": "Bootstrap 5 hero section",
         "scope": "text.html"
-    }
+    },
+
+    "imports": [
+        "./categories/html-basic.json",
+        "./categories/bootstrap-components.json",
+        "./categories/django-templates.json",
+        "./categories/forms.json",
+        "./categories/layout.json",
+        "./categories/seo-meta.json",
+        "./categories/accessibility.json"
+    ]
 }

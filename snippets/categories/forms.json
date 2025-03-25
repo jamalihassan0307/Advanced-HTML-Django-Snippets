@@ -1,0 +1,86 @@
+{
+    "html_form_input": {
+        "prefix": "aainput",
+        "body": [
+            "<div class=\"form-group\">",
+            "\t<label for=\"${1:inputId}\">${2:Label Text}</label>",
+            "\t<input type=\"${3:text}\" class=\"form-control\" id=\"${1:inputId}\" name=\"${4:inputName}\" placeholder=\"${5:Enter text}\">",
+            "</div>"
+        ],
+        "description": "HTML form input with Bootstrap classes",
+        "scope": "text.html"
+    },
+    "html_textarea": {
+        "prefix": "aatextarea",
+        "body": [
+            "<div class=\"form-group\">",
+            "\t<label for=\"${1:textareaId}\">${2:Label Text}</label>",
+            "\t<textarea class=\"form-control\" id=\"${1:textareaId}\" name=\"${3:textareaName}\" rows=\"${4:3}\">${5:}</textarea>",
+            "</div>"
+        ],
+        "description": "HTML textarea with Bootstrap classes",
+        "scope": "text.html"
+    },
+    "html_select": {
+        "prefix": "aaselect",
+        "body": [
+            "<div class=\"form-group\">",
+            "\t<label for=\"${1:selectId}\">${2:Label Text}</label>",
+            "\t<select class=\"form-control\" id=\"${1:selectId}\" name=\"${3:selectName}\">",
+            "\t\t<option value=\"${4:value1}\">${5:Option 1}</option>",
+            "\t\t<option value=\"${6:value2}\">${7:Option 2}</option>",
+            "\t\t<option value=\"${8:value3}\">${9:Option 3}</option>",
+            "\t</select>",
+            "</div>"
+        ],
+        "description": "HTML select with Bootstrap classes",
+        "scope": "text.html"
+    },
+    "html_checkbox": {
+        "prefix": "aacheckbox",
+        "body": [
+            "<div class=\"form-check\">",
+            "\t<input type=\"checkbox\" class=\"form-check-input\" id=\"${1:checkboxId}\" name=\"${2:checkboxName}\">",
+            "\t<label class=\"form-check-label\" for=\"${1:checkboxId}\">${3:Checkbox label}</label>",
+            "</div>"
+        ],
+        "description": "HTML checkbox with Bootstrap classes",
+        "scope": "text.html"
+    },
+    "html_radio": {
+        "prefix": "aaradio",
+        "body": [
+            "<div class=\"form-check\">",
+            "\t<input type=\"radio\" class=\"form-check-input\" id=\"${1:radioId}\" name=\"${2:radioName}\">",
+            "\t<label class=\"form-check-label\" for=\"${1:radioId}\">${3:Radio label}</label>",
+            "</div>"
+        ],
+        "description": "HTML radio with Bootstrap classes",
+        "scope": "text.html"
+    },
+    "django_form": {
+        "prefix": "aadform",
+        "body": [
+            "<form method=\"${1:post}\" action=\"${2:#}\">",
+            "\t{% csrf_token %}",
+            "\t{{ form.as_p }}",
+            "\t<button type=\"submit\" class=\"btn btn-primary\">${3:Submit}</button>",
+            "</form>"
+        ],
+        "description": "Django form with CSRF protection",
+        "scope": "text.html.django"
+    },
+    "django_crispy_form": {
+        "prefix": "aadcrispy",
+        "body": [
+            "{% load crispy_forms_tags %}",
+            "<form method=\"${1:post}\" action=\"${2:#}\">",
+            "\t{% csrf_token %}",
+            "\t{{ form|crispy }}",
+            "\t<button type=\"submit\" class=\"btn btn-primary\">${3:Submit}</button>",
+            "</form>"
+        ],
+        "description": "Django form with crispy-forms",
+        "scope": "text.html.django"
+    }
+} 
