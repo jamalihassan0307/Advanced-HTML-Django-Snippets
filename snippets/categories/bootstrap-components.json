@@ -155,5 +155,216 @@
         ],
         "description": "Bootstrap 5 tabs component",
         "scope": "text.html"
+    },
+    "bootstrap_badge": {
+        "prefix": "abbadge",
+        "body": "<span class=\"badge bg-${1:primary}\">${2:Badge text}</span>",
+        "description": "Bootstrap 5 badge component",
+        "scope": "text.html"
+    },
+    "bootstrap_button": {
+        "prefix": "abbtn",
+        "body": "<button type=\"button\" class=\"btn btn-${1:primary}\">${2:Button text}</button>",
+        "description": "Bootstrap 5 button component",
+        "scope": "text.html"
+    },
+    "bootstrap_button_group": {
+        "prefix": "abbtngroup",
+        "body": [
+            "<div class=\"btn-group\" role=\"group\" aria-label=\"${1:Button group}\">",
+            "\t<button type=\"button\" class=\"btn btn-${2:primary}\">${3:Left}</button>",
+            "\t<button type=\"button\" class=\"btn btn-${2:primary}\">${4:Middle}</button>",
+            "\t<button type=\"button\" class=\"btn btn-${2:primary}\">${5:Right}</button>",
+            "</div>"
+        ],
+        "description": "Bootstrap 5 button group",
+        "scope": "text.html"
+    },
+    "bootstrap_carousel": {
+        "prefix": "abcarousel",
+        "body": [
+            "<div id=\"${1:carouselId}\" class=\"carousel slide\" data-bs-ride=\"carousel\">",
+            "\t<div class=\"carousel-indicators\">",
+            "\t\t<button type=\"button\" data-bs-target=\"#${1:carouselId}\" data-bs-slide-to=\"0\" class=\"active\"></button>",
+            "\t\t<button type=\"button\" data-bs-target=\"#${1:carouselId}\" data-bs-slide-to=\"1\"></button>",
+            "\t\t<button type=\"button\" data-bs-target=\"#${1:carouselId}\" data-bs-slide-to=\"2\"></button>",
+            "\t</div>",
+            "\t<div class=\"carousel-inner\">",
+            "\t\t<div class=\"carousel-item active\">",
+            "\t\t\t<img src=\"${2:image1.jpg}\" class=\"d-block w-100\" alt=\"${3:First slide}\">",
+            "\t\t\t<div class=\"carousel-caption d-none d-md-block\">",
+            "\t\t\t\t<h5>${4:First slide label}</h5>",
+            "\t\t\t\t<p>${5:First slide description}</p>",
+            "\t\t\t</div>",
+            "\t\t</div>",
+            "\t\t<div class=\"carousel-item\">",
+            "\t\t\t<img src=\"${6:image2.jpg}\" class=\"d-block w-100\" alt=\"${7:Second slide}\">",
+            "\t\t\t<div class=\"carousel-caption d-none d-md-block\">",
+            "\t\t\t\t<h5>${8:Second slide label}</h5>",
+            "\t\t\t\t<p>${9:Second slide description}</p>",
+            "\t\t\t</div>",
+            "\t\t</div>",
+            "\t</div>",
+            "\t<button class=\"carousel-control-prev\" type=\"button\" data-bs-target=\"#${1:carouselId}\" data-bs-slide=\"prev\">",
+            "\t\t<span class=\"carousel-control-prev-icon\"></span>",
+            "\t</button>",
+            "\t<button class=\"carousel-control-next\" type=\"button\" data-bs-target=\"#${1:carouselId}\" data-bs-slide=\"next\">",
+            "\t\t<span class=\"carousel-control-next-icon\"></span>",
+            "\t</button>",
+            "</div>"
+        ],
+        "description": "Bootstrap 5 carousel component",
+        "scope": "text.html"
+    },
+    "bootstrap_collapse": {
+        "prefix": "abcollapse",
+        "body": [
+            "<button class=\"btn btn-${1:primary}\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#${2:collapseId}\">",
+            "\t${3:Toggle button}",
+            "</button>",
+            "<div class=\"collapse\" id=\"${2:collapseId}\">",
+            "\t<div class=\"card card-body\">",
+            "\t\t${4:Collapsible content}",
+            "\t</div>",
+            "</div>"
+        ],
+        "description": "Bootstrap 5 collapse component",
+        "scope": "text.html"
+    },
+    "bootstrap_dropdown": {
+        "prefix": "abdropdown",
+        "body": [
+            "<div class=\"dropdown\">",
+            "\t<button class=\"btn btn-${1:primary} dropdown-toggle\" type=\"button\" id=\"${2:dropdownId}\" data-bs-toggle=\"dropdown\">",
+            "\t\t${3:Dropdown button}",
+            "\t</button>",
+            "\t<ul class=\"dropdown-menu\" aria-labelledby=\"${2:dropdownId}\">",
+            "\t\t<li><a class=\"dropdown-item\" href=\"#\">${4:Action 1}</a></li>",
+            "\t\t<li><a class=\"dropdown-item\" href=\"#\">${5:Action 2}</a></li>",
+            "\t\t<li><hr class=\"dropdown-divider\"></li>",
+            "\t\t<li><a class=\"dropdown-item\" href=\"#\">${6:Action 3}</a></li>",
+            "\t</ul>",
+            "</div>"
+        ],
+        "description": "Bootstrap 5 dropdown component",
+        "scope": "text.html"
+    },
+    "bootstrap_form": {
+        "prefix": "abform",
+        "body": [
+            "<form>",
+            "\t<div class=\"mb-3\">",
+            "\t\t<label for=\"${1:inputId}\" class=\"form-label\">${2:Label}</label>",
+            "\t\t<input type=\"${3:text}\" class=\"form-control\" id=\"${1:inputId}\">",
+            "\t</div>",
+            "\t<div class=\"mb-3\">",
+            "\t\t<label for=\"${4:selectId}\" class=\"form-label\">${5:Select label}</label>",
+            "\t\t<select class=\"form-select\" id=\"${4:selectId}\">",
+            "\t\t\t<option selected>${6:Select option}</option>",
+            "\t\t\t<option value=\"1\">${7:Option 1}</option>",
+            "\t\t\t<option value=\"2\">${8:Option 2}</option>",
+            "\t\t</select>",
+            "\t</div>",
+            "\t<div class=\"mb-3\">",
+            "\t\t<label for=\"${9:textareaId}\" class=\"form-label\">${10:Textarea label}</label>",
+            "\t\t<textarea class=\"form-control\" id=\"${9:textareaId}\" rows=\"3\"></textarea>",
+            "\t</div>",
+            "\t<button type=\"submit\" class=\"btn btn-primary\">${11:Submit}</button>",
+            "</form>"
+        ],
+        "description": "Bootstrap 5 form with various inputs",
+        "scope": "text.html"
+    },
+    "bootstrap_input_group": {
+        "prefix": "abinputgroup",
+        "body": [
+            "<div class=\"input-group mb-3\">",
+            "\t<span class=\"input-group-text\" id=\"${1:addonId}\">${2:@}</span>",
+            "\t<input type=\"text\" class=\"form-control\" placeholder=\"${3:Username}\" aria-label=\"${4:Username}\" aria-describedby=\"${1:addonId}\">",
+            "</div>"
+        ],
+        "description": "Bootstrap 5 input group",
+        "scope": "text.html"
+    },
+    "bootstrap_list_group": {
+        "prefix": "ablistgroup",
+        "body": [
+            "<ul class=\"list-group\">",
+            "\t<li class=\"list-group-item active\" aria-current=\"true\">${1:Active item}</li>",
+            "\t<li class=\"list-group-item\">${2:Second item}</li>",
+            "\t<li class=\"list-group-item\">${3:Third item}</li>",
+            "\t<li class=\"list-group-item disabled\">${4:Disabled item}</li>",
+            "</ul>"
+        ],
+        "description": "Bootstrap 5 list group",
+        "scope": "text.html"
+    },
+    "bootstrap_offcanvas": {
+        "prefix": "aboffcanvas",
+        "body": [
+            "<div class=\"offcanvas offcanvas-start\" tabindex=\"-1\" id=\"${1:offcanvasId}\">",
+            "\t<div class=\"offcanvas-header\">",
+            "\t\t<h5 class=\"offcanvas-title\">${2:Offcanvas title}</h5>",
+            "\t\t<button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"offcanvas\"></button>",
+            "\t</div>",
+            "\t<div class=\"offcanvas-body\">",
+            "\t\t${3:Offcanvas content}",
+            "\t</div>",
+            "</div>"
+        ],
+        "description": "Bootstrap 5 offcanvas component",
+        "scope": "text.html"
+    },
+    "bootstrap_pagination": {
+        "prefix": "abpagination",
+        "body": [
+            "<nav aria-label=\"${1:Page navigation}\">",
+            "\t<ul class=\"pagination\">",
+            "\t\t<li class=\"page-item disabled\">",
+            "\t\t\t<a class=\"page-link\" href=\"#\" tabindex=\"-1\">Previous</a>",
+            "\t\t</li>",
+            "\t\t<li class=\"page-item active\"><a class=\"page-link\" href=\"#\">1</a></li>",
+            "\t\t<li class=\"page-item\"><a class=\"page-link\" href=\"#\">2</a></li>",
+            "\t\t<li class=\"page-item\"><a class=\"page-link\" href=\"#\">3</a></li>",
+            "\t\t<li class=\"page-item\">",
+            "\t\t\t<a class=\"page-link\" href=\"#\">Next</a>",
+            "\t\t</li>",
+            "\t</ul>",
+            "</nav>"
+        ],
+        "description": "Bootstrap 5 pagination component",
+        "scope": "text.html"
+    },
+    "bootstrap_popover": {
+        "prefix": "abpopover",
+        "body": [
+            "<button type=\"button\" class=\"btn btn-${1:primary}\" data-bs-toggle=\"popover\" title=\"${2:Popover title}\" data-bs-content=\"${3:Popover content}\">",
+            "\t${4:Click to toggle popover}",
+            "</button>"
+        ],
+        "description": "Bootstrap 5 popover component",
+        "scope": "text.html"
+    },
+    "bootstrap_progress": {
+        "prefix": "abprogress",
+        "body": [
+            "<div class=\"progress\">",
+            "\t<div class=\"progress-bar\" role=\"progressbar\" style=\"width: ${1:25}%\" aria-valuenow=\"${1:25}\" aria-valuemin=\"0\" aria-valuemax=\"100\">${1:25}%</div>",
+            "</div>"
+        ],
+        "description": "Bootstrap 5 progress bar",
+        "scope": "text.html"
+    },
+    "bootstrap_spinner": {
+        "prefix": "abspinner",
+        "body": "<div class=\"spinner-border text-${1:primary}\" role=\"status\"><span class=\"visually-hidden\">Loading...</span></div>",
+        "description": "Bootstrap 5 spinner component",
+        "scope": "text.html"
+    },
+    "bootstrap_tooltip": {
+        "prefix": "abtooltip",
+        "body": "<button type=\"button\" class=\"btn btn-${1:primary}\" data-bs-toggle=\"tooltip\" data-bs-placement=\"${2:top}\" title=\"${3:Tooltip text}\">${4:Tooltip button}</button>",
+        "description": "Bootstrap 5 tooltip component",
+        "scope": "text.html"
     }
 } 
