@@ -444,5 +444,214 @@
         ],
         "description": "Django test class",
         "scope": "python"
+    },
+    "django_cycle": {
+        "prefix": "adcycle",
+        "body": "{% cycle '${1:first}' '${2:second}' '${3:third}' as ${4:cycle_name} %}",
+        "description": "Django cycle template tag",
+        "scope": "text.html.django"
+    },
+    "django_regroup": {
+        "prefix": "adregroup",
+        "body": [
+            "{% regroup ${1:list} by ${2:field} as ${3:grouped_list} %}",
+            "\t{% for group in ${3:grouped_list} %}",
+            "\t\t<h3>{{ group.grouper }}</h3>",
+            "\t\t<ul>",
+            "\t\t\t{% for item in group.list %}",
+            "\t\t\t\t<li>{{ item.${4:field} }}</li>",
+            "\t\t\t{% endfor %}",
+            "\t\t</ul>",
+            "\t{% endfor %}"
+        ],
+        "description": "Django regroup template tag",
+        "scope": "text.html.django"
+    },
+    "django_verbatim": {
+        "prefix": "adverbatim",
+        "body": [
+            "{% verbatim %}",
+            "\t${1:content}",
+            "{% endverbatim %}"
+        ],
+        "description": "Django verbatim template tag",
+        "scope": "text.html.django"
+    },
+    "django_spaceless": {
+        "prefix": "adspaceless",
+        "body": [
+            "{% spaceless %}",
+            "\t${1:content}",
+            "{% endspaceless %}"
+        ],
+        "description": "Django spaceless template tag",
+        "scope": "text.html.django"
+    },
+    "django_lorem": {
+        "prefix": "adlorem",
+        "body": "{% lorem ${1:3} p %}",
+        "description": "Django lorem ipsum template tag",
+        "scope": "text.html.django"
+    },
+    "django_now": {
+        "prefix": "adnow",
+        "body": "{% now \"${1:Y-m-d H:i:s}\" %}",
+        "description": "Django now template tag",
+        "scope": "text.html.django"
+    },
+    "django_python_serializer": {
+        "prefix": "adpserializer",
+        "body": [
+            "from rest_framework import serializers",
+            "from .models import ${1:Model}",
+            "",
+            "class ${2:Model}Serializer(serializers.ModelSerializer):",
+            "\tclass Meta:",
+            "\t\tmodel = ${1:Model}",
+            "\t\tfields = ['${3:field1}', '${4:field2}']",
+            "\t\tread_only_fields = ['${5:field1}']",
+            "",
+            "\tdef validate_${6:field}(self, value):",
+            "\t\t${7:# Add custom validation}",
+            "\t\treturn value"
+        ],
+        "description": "Django REST framework serializer",
+        "scope": "python"
+    },
+    "django_python_permissions": {
+        "prefix": "adppermissions",
+        "body": [
+            "from rest_framework import permissions",
+            "",
+            "class ${1:CustomPermission}(permissions.BasePermission):",
+            "\tdef has_permission(self, request, view):",
+            "\t\t${2:# Add permission logic}",
+            "\t\treturn True",
+            "",
+            "\tdef has_object_permission(self, request, view, obj):",
+            "\t\t${3:# Add object permission logic}",
+            "\t\treturn True"
+        ],
+        "description": "Django REST framework custom permission",
+        "scope": "python"
+    },
+    "django_python_throttling": {
+        "prefix": "adpthrottling",
+        "body": [
+            "from rest_framework.throttling import UserRateThrottle",
+            "",
+            "class ${1:CustomThrottle(UserRateThrottle):",
+            "\trate = '${2:100}/day'",
+            "",
+            "\tdef allow_request(self, request, view):",
+            "\t\t${3:# Add custom throttling logic}",
+            "\t\treturn True"
+        ],
+        "description": "Django REST framework throttling",
+        "scope": "python"
+    },
+    "django_python_authentication": {
+        "prefix": "adpauth",
+        "body": [
+            "from rest_framework.authentication import TokenAuthentication",
+            "from rest_framework.permissions import IsAuthenticated",
+            "from rest_framework.views import APIView",
+            "",
+            "class ${1:CustomAuthView}(APIView):",
+            "\tauthentication_classes = [TokenAuthentication]",
+            "\tpermission_classes = [IsAuthenticated]",
+            "",
+            "\tdef get(self, request):",
+            "\t\t${2:# Add view logic}",
+            "\t\treturn Response({'message': 'Success'})"
+        ],
+        "description": "Django REST framework authentication",
+        "scope": "python"
+    },
+    "django_python_cache": {
+        "prefix": "adpcache",
+        "body": [
+            "from django.core.cache import cache",
+            "from django.views.decorators.cache import cache_page",
+            "",
+            "@cache_page(${1:60} * ${2:15})",
+            "def ${3:view_name}(request):",
+            "\t${4:# View logic}",
+            "\treturn response",
+            "",
+            "# Cache usage example",
+            "def cache_example():",
+            "\t# Set cache",
+            "\tcache.set('${5:key}', '${6:value}', ${7:timeout})",
+            "\t# Get cache",
+            "\tvalue = cache.get('${5:key}')",
+            "\t# Delete cache",
+            "\tcache.delete('${5:key}')"
+        ],
+        "description": "Django caching examples",
+        "scope": "python"
+    },
+    "django_python_celery": {
+        "prefix": "adpcelery",
+        "body": [
+            "from celery import shared_task",
+            "from django.core.mail import send_mail",
+            "",
+            "@shared_task",
+            "def ${1:task_name}(*args, **kwargs):",
+            "\t${2:# Task logic}",
+            "\treturn '${3:Task completed}'",
+            "",
+            "# Task usage example",
+            "def trigger_task():",
+            "\t${1:task_name}.delay(${4:arg1}, ${5:arg2})",
+            "\t# Or with apply_async",
+            "\t${1:task_name}.apply_async(",
+            "\t\targs=[${4:arg1}, ${5:arg2}],",
+            "\t\tcountdown=${6:60}",
+            "\t)"
+        ],
+        "description": "Django Celery task example",
+        "scope": "python"
+    },
+    "django_python_channels": {
+        "prefix": "adpchannels",
+        "body": [
+            "from channels.generic.websocket import AsyncWebsocketConsumer",
+            "import json",
+            "",
+            "class ${1:ConsumerName}(AsyncWebsocketConsumer):",
+            "\tasync def connect(self):",
+            "\t\tawait self.channel_layer.group_add(",
+            "\t\t\t'${2:group_name}',",
+            "\t\t\tself.channel_name",
+            "\t\t)",
+            "\t\tawait self.accept()",
+            "",
+            "\tasync def disconnect(self, close_code):",
+            "\t\tawait self.channel_layer.group_discard(",
+            "\t\t\t'${2:group_name}',",
+            "\t\t\tself.channel_name",
+            "\t\t)",
+            "",
+            "\tasync def receive(self, text_data):",
+            "\t\ttext_data_json = json.loads(text_data)",
+            "\t\tmessage = text_data_json['message']",
+            "\t\tawait self.channel_layer.group_send(",
+            "\t\t\t'${2:group_name}',",
+            "\t\t\t{",
+            "\t\t\t\t'type': '${3:message_type}',",
+            "\t\t\t\t'message': message",
+            "\t\t\t}",
+            "\t\t)",
+            "",
+            "\tasync def ${3:message_type}(self, event):",
+            "\t\tmessage = event['message']",
+            "\t\tawait self.send(text_data=json.dumps({",
+            "\t\t\t'message': message",
+            "\t\t}))"
+        ],
+        "description": "Django Channels WebSocket consumer",
+        "scope": "python"
     }
 } 
