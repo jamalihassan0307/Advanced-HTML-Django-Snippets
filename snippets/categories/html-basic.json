@@ -1,12 +1,12 @@
 {
     "html_doctype": {
-        "prefix": "aadoctype",
+        "prefix": "hdoc",
         "body": "<!DOCTYPE html>",
         "description": "HTML5 doctype declaration",
         "scope": "text.html"
     },
     "html_boilerplate": {
-        "prefix": "aahtml5",
+        "prefix": "hboiler",
         "body": [
             "<!DOCTYPE html>",
             "<html lang=\"${1:en}\">",
@@ -26,25 +26,25 @@
         "scope": "text.html"
     },
     "html_link": {
-        "prefix": "aalink",
+        "prefix": "hlink",
         "body": "<a href=\"${1:#}\" class=\"${2:link}\">${3:Link text}</a>",
         "description": "HTML link with class",
         "scope": "text.html"
     },
     "html_image": {
-        "prefix": "aaimg",
+        "prefix": "himg",
         "body": "<img src=\"${1:image.jpg}\" alt=\"${2:description}\" class=\"${3:img-fluid}\">",
         "description": "HTML image with class",
         "scope": "text.html"
     },
     "html_paragraph": {
-        "prefix": "aap",
+        "prefix": "hp",
         "body": "<p class=\"${1:text}\">${2:content}</p>",
         "description": "HTML paragraph with class",
         "scope": "text.html"
     },
     "html_list_unordered": {
-        "prefix": "aaul",
+        "prefix": "hul",
         "body": [
             "<ul class=\"${1:list}\">",
             "\t<li>${2:First item}</li>",
@@ -56,7 +56,7 @@
         "scope": "text.html"
     },
     "html_list_ordered": {
-        "prefix": "aaol",
+        "prefix": "hol",
         "body": [
             "<ol class=\"${1:list}\">",
             "\t<li>${2:First item}</li>",
