@@ -32,5 +32,186 @@
         ],
         "description": "Accessible tab panel with ARIA attributes",
         "scope": "text.html"
+    },
+    "aria_landmark": {
+        "prefix": "acclandmark",
+        "body": [
+            "<nav role=\"navigation\" aria-label=\"${1:Main navigation}\">",
+            "\t${2:navigation content}",
+            "</nav>"
+        ],
+        "description": "ARIA landmark with label",
+        "scope": "text.html"
+    },
+    "aria_live_region": {
+        "prefix": "acclive",
+        "body": "<div aria-live=\"${1:polite|assertive}\" aria-atomic=\"${2:true|false}\">${3:dynamic content}</div>",
+        "description": "ARIA live region for dynamic content",
+        "scope": "text.html"
+    },
+    "aria_tooltip": {
+        "prefix": "acctooltip",
+        "body": [
+            "<div class=\"tooltip-container\">",
+            "\t<button aria-describedby=\"${1:tooltip-id}\">${2:Trigger text}</button>",
+            "\t<div id=\"${1:tooltip-id}\" role=\"tooltip\" class=\"tooltip\">${3:Tooltip content}</div>",
+            "</div>"
+        ],
+        "description": "Accessible tooltip with ARIA attributes",
+        "scope": "text.html"
+    },
+    "aria_accordion": {
+        "prefix": "accaccordion",
+        "body": [
+            "<div class=\"accordion\">",
+            "\t<button aria-expanded=\"${1:false}\" aria-controls=\"${2:panel-id}\">${3:Accordion header}</button>",
+            "\t<div id=\"${2:panel-id}\" class=\"panel\" hidden>${4:Accordion content}</div>",
+            "</div>"
+        ],
+        "description": "Accessible accordion with ARIA attributes",
+        "scope": "text.html"
+    },
+    "aria_modal": {
+        "prefix": "accmodal",
+        "body": [
+            "<div role=\"dialog\" aria-modal=\"true\" aria-labelledby=\"${1:modal-title}\">",
+            "\t<h2 id=\"${1:modal-title}\">${2:Modal Title}</h2>",
+            "\t<div class=\"modal-content\">${3:Modal content}</div>",
+            "\t<button aria-label=\"Close modal\">Close</button>",
+            "</div>"
+        ],
+        "description": "Accessible modal dialog with ARIA attributes",
+        "scope": "text.html"
+    },
+    "aria_tabs": {
+        "prefix": "acctabs",
+        "body": [
+            "<div class=\"tabs\">",
+            "\t<div role=\"tablist\">",
+            "\t\t<button role=\"tab\" aria-selected=\"true\" aria-controls=\"${1:panel1}\">${2:Tab 1}</button>",
+            "\t\t<button role=\"tab\" aria-selected=\"false\" aria-controls=\"${3:panel2}\">${4:Tab 2}</button>",
+            "\t</div>",
+            "\t<div id=\"${1:panel1}\" role=\"tabpanel\">${5:Panel 1 content}</div>",
+            "\t<div id=\"${3:panel2}\" role=\"tabpanel\" hidden>${6:Panel 2 content}</div>",
+            "</div>"
+        ],
+        "description": "Accessible tabs with ARIA attributes",
+        "scope": "text.html"
+    },
+    "aria_combobox": {
+        "prefix": "acccombo",
+        "body": [
+            "<div class=\"combobox\">",
+            "\t<label for=\"${1:combobox-input}\">${2:Select option}</label>",
+            "\t<input type=\"text\" id=\"${1:combobox-input}\" role=\"combobox\" aria-expanded=\"false\" aria-controls=\"${3:listbox}\" aria-autocomplete=\"list\">",
+            "\t<ul id=\"${3:listbox}\" role=\"listbox\" hidden>",
+            "\t\t<li role=\"option\">${4:Option 1}</li>",
+            "\t\t<li role=\"option\">${5:Option 2}</li>",
+            "\t</ul>",
+            "</div>"
+        ],
+        "description": "Accessible combobox with ARIA attributes",
+        "scope": "text.html"
+    },
+    "aria_menubar": {
+        "prefix": "accmenu",
+        "body": [
+            "<nav role=\"menubar\" aria-label=\"${1:Main menu}\">",
+            "\t<button role=\"menuitem\" aria-haspopup=\"true\" aria-expanded=\"false\">${2:Menu item}</button>",
+            "\t<ul role=\"menu\" hidden>",
+            "\t\t<li role=\"menuitem\">${3:Submenu item 1}</li>",
+            "\t\t<li role=\"menuitem\">${4:Submenu item 2}</li>",
+            "\t</ul>",
+            "</nav>"
+        ],
+        "description": "Accessible menubar with ARIA attributes",
+        "scope": "text.html"
+    },
+    "aria_slider": {
+        "prefix": "accslider",
+        "body": [
+            "<div class=\"slider\">",
+            "\t<label for=\"${1:slider-input}\">${2:Slider label}</label>",
+            "\t<input type=\"range\" id=\"${1:slider-input}\" role=\"slider\" aria-valuemin=\"${3:0}\" aria-valuemax=\"${4:100}\" aria-valuenow=\"${5:50}\">",
+            "</div>"
+        ],
+        "description": "Accessible slider with ARIA attributes",
+        "scope": "text.html"
+    },
+    "aria_spinbutton": {
+        "prefix": "accspin",
+        "body": [
+            "<div class=\"spinbutton\">",
+            "\t<label for=\"${1:spin-input}\">${2:Spin button label}</label>",
+            "\t<input type=\"number\" id=\"${1:spin-input}\" role=\"spinbutton\" aria-valuemin=\"${3:0}\" aria-valuemax=\"${4:100}\" aria-valuenow=\"${5:0}\">",
+            "\t<button aria-label=\"Increment\">+</button>",
+            "\t<button aria-label=\"Decrement\">-</button>",
+            "</div>"
+        ],
+        "description": "Accessible spin button with ARIA attributes",
+        "scope": "text.html"
+    },
+    "aria_switch": {
+        "prefix": "accswitch",
+        "body": [
+            "<button role=\"switch\" aria-checked=\"${1:false}\" aria-label=\"${2:Toggle switch}\">",
+            "\t<span class=\"switch-track\"></span>",
+            "</button>"
+        ],
+        "description": "Accessible switch with ARIA attributes",
+        "scope": "text.html"
+    },
+    "aria_radiogroup": {
+        "prefix": "accradio",
+        "body": [
+            "<div role=\"radiogroup\" aria-labelledby=\"${1:group-label}\">",
+            "\t<h3 id=\"${1:group-label}\">${2:Radio group label}</h3>",
+            "\t<div role=\"radio\" aria-checked=\"true\">${3:Option 1}</div>",
+            "\t<div role=\"radio\" aria-checked=\"false\">${4:Option 2}</div>",
+            "</div>"
+        ],
+        "description": "Accessible radio group with ARIA attributes",
+        "scope": "text.html"
+    },
+    "aria_checkbox": {
+        "prefix": "acccheck",
+        "body": [
+            "<div role=\"checkbox\" aria-checked=\"${1:false}\" aria-label=\"${2:Checkbox label}\">",
+            "\t<span class=\"checkbox\"></span>",
+            "</div>"
+        ],
+        "description": "Accessible checkbox with ARIA attributes",
+        "scope": "text.html"
+    },
+    "aria_progressbar": {
+        "prefix": "accprogress",
+        "body": [
+            "<div role=\"progressbar\" aria-valuenow=\"${1:50}\" aria-valuemin=\"${2:0}\" aria-valuemax=\"${3:100}\">",
+            "\t<div class=\"progress-bar\" style=\"width: ${1:50}%\"></div>",
+            "</div>"
+        ],
+        "description": "Accessible progress bar with ARIA attributes",
+        "scope": "text.html"
+    },
+    "aria_meter": {
+        "prefix": "accmeter",
+        "body": [
+            "<div role=\"meter\" aria-valuenow=\"${1:75}\" aria-valuemin=\"${2:0}\" aria-valuemax=\"${3:100}\" aria-label=\"${4:Progress meter}\">",
+            "\t<div class=\"meter-bar\" style=\"width: ${1:75}%\"></div>",
+            "</div>"
+        ],
+        "description": "Accessible meter with ARIA attributes",
+        "scope": "text.html"
+    },
+    "aria_scrollbar": {
+        "prefix": "accscroll",
+        "body": [
+            "<div role=\"scrollbar\" aria-controls=\"${1:scrollable-content}\" aria-valuenow=\"${2:0}\" aria-valuemin=\"${3:0}\" aria-valuemax=\"${4:100}\">",
+            "\t<div class=\"scrollbar-track\"></div>",
+            "\t<div class=\"scrollbar-thumb\"></div>",
+            "</div>"
+        ],
+        "description": "Accessible scrollbar with ARIA attributes",
+        "scope": "text.html"
     }
 } 
