@@ -1,168 +1,95 @@
-# README
-## Visual Studio Code HTML Snippets
-## DISABLING THIS EXTENSION AS IT CURRENTLY CONFLICTS WTH EXISTING VS CODE HTML EXTENSION
- 
-This extension adds rich language support for the HTML Markup to VS Code, including:
+# Advanced HTML & Django Snippets
 
-- Full HTML5 Tags
-- Colorization
-- Snippets
-- [partially implemented] Quick Info
-- description mentions if tag deprecated 
-
-### Update 5
-- Disabling this extension as its functionality has been absorbed by VS Code main html extension.
-
-### Update 4
-- Removed all languages, only HTML Remains.
-- Added FAQ in end of page.
-
-### Update 3
-- added php, js, and jsreact as languages where the snippets work by default.
-
-
-### Update 2
-- fixed a bug with line cursor on vscode 1.5.1
-
-### Update 1
-- removed deprecated tags [acronym, applet, basefont, center, dir, font, frame, frameset, noframes, strike, tt]
-- fixed LI tag issue, you couldn't add new line in the tags
-
-### Todo
-- [on-going]Improve syntax layout.
-- [on-going]Add support for Tab to end of line.
-- [on-going]Populate Tags with properties.
-
-# Using
-Type part of a snippet, press enter, and the snippet unfolds.
-
-Snippets named as the tag without braces 
-    
-    div --> <div></div>
-    doc --> <!DOCTYPE html>
-    a   --> <a href=""></a>
-
-![alt text](https://i.imgur.com/VOhBvHb.gif "Snippets Preview")
-
-# Installation
-
-1. Install Visual Studio Code 0.10.1 or higher
-2. Launch Code
-3. From the command palette `Ctrl-Shift-P` (Windows, Linux) or `Cmd-Shift-P` (OSX)
-4. Select Install Extension
-5. Type `HTML-Snippets`
-6. Choose the extension
-7. Reload Visual Studio Code
-
-# FAQ
-## How to enable the snippets on a file other than html?
-<s>Add the following code to the project settings.json or global settings.json :
-```
-"files.associations": {
-        // extension name : html
-        "*.ejs": "html",
-        "*.js": "html"
-    }
-```
-the above code will allow html snippet to work on .ejs and .js files, amend to fit your needs.</s>
-
-Please Read this answer.
-[Make extension work in languages other than HTML](https://github.com/abusaidm/html-snippets/issues/27#issuecomment-282512411)
-
-## How can I report an issue?
-The easiest way is to start a git issue, I will attempt to answer ASAP else I hope someone else will answer.
- 
-# Contact
-If you find any issue or have a suggestion please tweet me on @m_abusaid
-
->**I am unable to respond to comments on the store page, please use appropriate channels github/twitter to reach me. Thank you**
-
-## License
-MIT License, refer to license file.
-
-# Source
-[Github](https://github.com/abusaidm/html-snippets)
-
-** Enjoy!**
-
-# aHTML Django Snippets
-
-This extension provides a rich set of HTML and Django template snippets for VS Code, making web development faster and more efficient. All snippets start with the prefix "aa" for easy access.
+A comprehensive collection of HTML, Bootstrap 5, and Django template snippets for Visual Studio Code. These snippets are designed to enhance your web development workflow with easy-to-use, accessible, and modern components.
 
 ## Features
 
-- HTML5 and Bootstrap 5 Components
-- Django Template Tags and Forms
-- Responsive Design Components
-- Accessibility Features
-- Modern UI Components
+All snippets start with the prefix `aa` for easy access and to avoid conflicts with other snippet extensions.
 
-## Available Snippets
+### Categories
 
-### HTML Boilerplate
-- `aa!` - Complete HTML5 boilerplate with responsive meta tags
-- `aadoctype` - HTML5 doctype declaration
+1. **HTML Basic Elements** (`aa`)
+   - Basic HTML structure
+   - Common HTML elements
+   - Text formatting
+   - Lists and tables
 
-### Django Template Tags
-- `aadblock` - Django template block
-- `aadfor` - Django for loop
-- `aadif` - Django if-else statement
-- `aadextends` - Django extends template tag
-- `aadinclude` - Django include template tag
-- `aadurl` - Django URL template tag
-- `aadstatic` - Django static file reference
+2. **Bootstrap 5 Components** (`aa`)
+   - Navigation bars
+   - Cards
+   - Modals
+   - Alerts
+   - Toasts
+   - Pagination
 
-### Forms and Input
-- `aadform` - Django form with CSRF protection
-- `aadcrispy` - Django form with crispy-forms
-- `aainputgroup` - Bootstrap 5 input group with label
+3. **Django Templates** (`aad`)
+   - Template tags
+   - Blocks
+   - Loops and conditionals
+   - Include statements
+   - Static files
 
-### Bootstrap Components
-- `aacard` - Bootstrap-style responsive card
-- `aanavbar` - Responsive Bootstrap 5 navbar
-- `aacontainer` - Bootstrap container
-- `aarow` - Bootstrap grid row with columns
-- `aamodal` - Bootstrap 5 modal component
-- `aaalert` - Bootstrap 5 dismissible alert
-- `aatabs` - Bootstrap 5 tabs component
+4. **Forms** (`aa`)
+   - Input fields
+   - Textareas
+   - Select dropdowns
+   - Checkboxes
+   - Radio buttons
+   - Django forms
 
-### Media and Icons
-- `aaimg_responsive` - Responsive image with lazy loading
-- `aavideo_embed` - Responsive video embed
-- `aafa` - Font Awesome icon
-- `aasvg` - Bootstrap Icons SVG snippet
+5. **Layout** (`aa`)
+   - Grid systems
+   - Sections
+   - Headers
+   - Footers
+   - Hero sections
 
-### Accessibility
-- `aaskip_link` - Accessibility skip link
-- `aaaria_alert` - Accessible alert notification
+6. **SEO & Meta Tags** (`aa`)
+   - Meta descriptions
+   - Open Graph tags
+   - Twitter cards
+   - Viewport settings
 
-### Django Messages
-- `aadmessages` - Django messages framework with Bootstrap alerts
-
-## Installation
-
-1. Install Visual Studio Code 1.9.1 or higher
-2. Launch Code
-3. From the command palette `Ctrl-Shift-P` (Windows, Linux) or `Cmd-Shift-P` (OSX)
-4. Select Install Extension
-5. Search for `aHTML Django Snippets`
-6. Choose the extension
-7. Reload Visual Studio Code
+7. **Accessibility** (`aa`)
+   - Skip links
+   - ARIA roles
+   - Alert notifications
+   - Dialog components
+   - Tab panels
 
 ## Usage
 
-Type `aa` followed by the snippet name and press `Enter` or `Tab` to insert the snippet. Use `Tab` to navigate through the placeholders.
+Type `aa` followed by the snippet name. For example:
+- `aagrid` → Bootstrap responsive grid
+- `aadform` → Django form with CSRF protection
+- `aaseo` → Common SEO meta tags
+- `aaskip` → Accessibility skip link
+
+## Installation
+
+1. Open VS Code
+2. Go to Extensions (Ctrl+Shift+X)
+3. Search for "Advanced HTML & Django Snippets"
+4. Click Install
+
+## Requirements
+
+- Visual Studio Code version 1.60.0 or higher
 
 ## Contributing
 
-Feel free to submit issues and enhancement requests on our GitHub repository.
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## License
 
-MIT License, refer to license file.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Author
+## Support
 
-jamalihassan0307
-
-**Enjoy coding faster with aHTML Django Snippets!**
+If you encounter any problems or have suggestions, please [open an issue](https://github.com/your-username/ahtml-django-snippets/issues) on our GitHub repository.

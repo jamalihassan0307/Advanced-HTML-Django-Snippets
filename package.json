@@ -1,16 +1,11 @@
 {
 	"name": "ahtml-django-snippets",
-	"displayName": "aHTML Django Snippets",
-	"description": "Comprehensive collection of HTML5, Bootstrap 5, and Django template snippets with 'aa' prefix. Features responsive components, accessibility elements, and modern UI patterns.",
-	"version": "0.1.0",
+	"displayName": "Advanced HTML & Django Snippets",
+	"description": "A comprehensive collection of HTML, Bootstrap 5, and Django template snippets",
+	"version": "1.0.0",
 	"publisher": "jamalihassan0307",
-	"icon": "images/logo.png",
 	"engines": {
-		"vscode": "^1.9.1"
-	},
-	"galleryBanner": {
-		"color": "#1E81C1",
-		"theme": "light"
+		"vscode": "^1.60.0"
 	},
 	"categories": [
 		"Snippets"
@@ -22,21 +17,57 @@
 		"snippets",
 		"templates"
 	],
+	"icon": "images/icon.png",
+	"galleryBanner": {
+		"color": "#1e1e1e",
+		"theme": "dark"
+	},
 	"contributes": {
 		"snippets": [
 			{
 				"language": "html",
-				"path": "./snippets/snippets.json"
+				"path": "./snippets/categories/html-basic.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/categories/bootstrap-components.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/categories/django-templates.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/categories/forms.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/categories/layout.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/categories/seo-meta.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/categories/accessibility.json"
 			}
 		]
 	},
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/jamalihassan0307/ahtml-django-snippets/issues"
-	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/jamalihassan0307/ahtml-django-snippets.git"
+		"url": "https://github.com/your-username/ahtml-django-snippets"
 	},
-	"homepage": "https://github.com/jamalihassan0307/ahtml-django-snippets#readme"
+	"bugs": {
+		"url": "https://github.com/your-username/ahtml-django-snippets/issues"
+	},
+	"homepage": "https://github.com/your-username/ahtml-django-snippets#readme",
+	"scripts": {
+		"package": "vsce package",
+		"publish": "vsce publish"
+	},
+	"devDependencies": {
+		"vsce": "^2.15.0"
+	},
+	"license": "MIT"
 }

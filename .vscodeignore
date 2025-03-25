@@ -1,0 +1,12 @@
+.git/**
+.gitignore
+.vscode/**
+node_modules/**
+*.vsix
+.github/**
+.DS_Store
+**/*.map
+**/*.ts
+tsconfig.json
+vsc-extension-quickstart.md
+webpack.config.js 
