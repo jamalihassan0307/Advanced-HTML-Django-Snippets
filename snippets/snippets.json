@@ -175,14 +175,138 @@
       "scope": "text.html"
     },
     "grid_row": {
-      "prefix": "arow",
-      "body": [
+        "prefix": "aarow",
+        "body": [
         "<div class=\"row\">",
         "\t<div class=\"col\">${1}</div>",
         "\t<div class=\"col\">${2}</div>",
         "</div>"
-      ],
-      "description": "Bootstrap grid row with 2 columns",
-      "scope": "text.html"
+        ],
+        "description": "Bootstrap grid row with 2 columns",
+        "scope": "text.html"
+    },
+
+    "django_if": {
+        "prefix": "aadif",
+        "body": [
+            "{% if ${1:condition} %}",
+            "\t${2}",
+            "{% else %}",
+            "\t${3}",
+            "{% endif %}"
+        ],
+        "description": "Django if-else template tag",
+        "scope": "text.html.django"
+    },
+
+    "django_include": {
+        "prefix": "aadinclude",
+        "body": "{% include '${1:template_name.html}' %}",
+        "description": "Django include template tag",
+        "scope": "text.html.django"
+    },
+
+    "django_url": {
+        "prefix": "aadurl",
+        "body": "{% url '${1:url_name}' %}",
+        "description": "Django URL template tag",
+        "scope": "text.html.django"
+    },
+
+    "django_extends": {
+        "prefix": "aadextends",
+        "body": "{% extends '${1:base.html}' %}",
+        "description": "Django extends template tag",
+        "scope": "text.html.django"
+    },
+
+    "bootstrap_modal": {
+        "prefix": "aamodal",
+        "body": [
+            "<div class=\"modal fade\" id=\"${1:modalId}\" tabindex=\"-1\" aria-labelledby=\"${2:modalLabel}\" aria-hidden=\"true\">",
+            "\t<div class=\"modal-dialog\">",
+            "\t\t<div class=\"modal-content\">",
+            "\t\t\t<div class=\"modal-header\">",
+            "\t\t\t\t<h5 class=\"modal-title\" id=\"${2:modalLabel}\">${3:Modal Title}</h5>",
+            "\t\t\t\t<button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>",
+            "\t\t\t</div>",
+            "\t\t\t<div class=\"modal-body\">",
+            "\t\t\t\t${4:Modal content goes here}",
+            "\t\t\t</div>",
+            "\t\t\t<div class=\"modal-footer\">",
+            "\t\t\t\t<button type=\"button\" class=\"btn btn-secondary\" data-bs-dismiss=\"modal\">Close</button>",
+            "\t\t\t\t<button type=\"button\" class=\"btn btn-primary\">${5:Save changes}</button>",
+            "\t\t\t</div>",
+            "\t\t</div>",
+            "\t</div>",
+            "</div>"
+        ],
+        "description": "Bootstrap 5 modal component",
+        "scope": "text.html"
+    },
+
+    "django_crispy_form": {
+        "prefix": "aadcrispy",
+        "body": [
+            "{% load crispy_forms_tags %}",
+            "<form method=\"${1:post}\" action=\"${2:#}\">",
+            "\t{% csrf_token %}",
+            "\t{{ form|crispy }}",
+            "\t<button type=\"submit\" class=\"btn btn-primary\">${3:Submit}</button>",
+            "</form>"
+        ],
+        "description": "Django form with crispy-forms",
+        "scope": "text.html.django"
+    },
+
+    "bootstrap_alert": {
+        "prefix": "aaalert",
+        "body": [
+            "<div class=\"alert alert-${1:primary} alert-dismissible fade show\" role=\"alert\">",
+            "\t${2:Alert message}",
+            "\t<button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Close\"></button>",
+            "</div>"
+        ],
+        "description": "Bootstrap 5 dismissible alert",
+        "scope": "text.html"
+    },
+
+    "django_messages": {
+        "prefix": "aadmessages",
+        "body": [
+            "{% if messages %}",
+            "<div class=\"messages\">",
+            "\t{% for message in messages %}",
+            "\t<div class=\"alert alert-{{ message.tags }} alert-dismissible fade show\" role=\"alert\">",
+            "\t\t{{ message }}",
+            "\t\t<button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Close\"></button>",
+            "\t</div>",
+            "\t{% endfor %}",
+            "</div>",
+            "{% endif %}"
+        ],
+        "description": "Django messages framework with Bootstrap alerts",
+        "scope": "text.html.django"
+    },
+
+    "bootstrap_tabs": {
+        "prefix": "aatabs",
+        "body": [
+            "<ul class=\"nav nav-tabs\" id=\"${1:myTab}\" role=\"tablist\">",
+            "\t<li class=\"nav-item\" role=\"presentation\">",
+            "\t\t<button class=\"nav-link active\" id=\"${2:home}-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#${2:home}\" type=\"button\" role=\"tab\" aria-controls=\"${2:home}\" aria-selected=\"true\">${3:Home}</button>",
+            "\t</li>",
+            "\t<li class=\"nav-item\" role=\"presentation\">",
+            "\t\t<button class=\"nav-link\" id=\"${4:profile}-tab\" data-bs-toggle=\"tab\" data-bs-target=\"#${4:profile}\" type=\"button\" role=\"tab\" aria-controls=\"${4:profile}\" aria-selected=\"false\">${5:Profile}</button>",
+            "\t</li>",
+            "</ul>",
+            "<div class=\"tab-content\" id=\"${1:myTab}Content\">",
+            "\t<div class=\"tab-pane fade show active\" id=\"${2:home}\" role=\"tabpanel\" aria-labelledby=\"${2:home}-tab\">${6:Home content}</div>",
+            "\t<div class=\"tab-pane fade\" id=\"${4:profile}\" role=\"tabpanel\" aria-labelledby=\"${4:profile}-tab\">${7:Profile content}</div>",
+            "</div>"
+        ],
+        "description": "Bootstrap 5 tabs component",
+        "scope": "text.html"
     }
+
   }
