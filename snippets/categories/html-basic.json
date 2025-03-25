@@ -410,5 +410,182 @@
         ],
         "description": "Complete HTML table with header, body, and footer",
         "scope": "text.html"
+    },
+    "html_abbr": {
+        "prefix": "ahabbr",
+        "body": "<abbr title=\"${1:full text}\">${2:abbreviated text}</abbr>",
+        "description": "HTML abbreviation with title",
+        "scope": "text.html"
+    },
+    "html_address": {
+        "prefix": "ahaddress",
+        "body": [
+            "<address>",
+            "\t${1:contact information}",
+            "</address>"
+        ],
+        "description": "HTML address element",
+        "scope": "text.html"
+    },
+    "html_blockquote": {
+        "prefix": "ahblockquote",
+        "body": [
+            "<blockquote class=\"${1:quote}\">",
+            "\t${2:quoted text}",
+            "\t<footer>${3:citation}</footer>",
+            "</blockquote>"
+        ],
+        "description": "HTML blockquote with citation",
+        "scope": "text.html"
+    },
+    "html_code": {
+        "prefix": "ahcode",
+        "body": "<code>${1:code snippet}</code>",
+        "description": "HTML inline code element",
+        "scope": "text.html"
+    },
+    "html_pre": {
+        "prefix": "ahpre",
+        "body": [
+            "<pre class=\"${1:pre-formatted}\">",
+            "\t${2:pre-formatted text}",
+            "</pre>"
+        ],
+        "description": "HTML pre-formatted text",
+        "scope": "text.html"
+    },
+    "html_pre_code": {
+        "prefix": "ahprecode",
+        "body": [
+            "<pre><code class=\"${1:language}\">",
+            "\t${2:code block}",
+            "</code></pre>"
+        ],
+        "description": "HTML pre and code combination for code blocks",
+        "scope": "text.html"
+    },
+    "html_cite": {
+        "prefix": "ahcite",
+        "body": "<cite>${1:citation text}</cite>",
+        "description": "HTML citation element",
+        "scope": "text.html"
+    },
+    "html_del": {
+        "prefix": "ahdel",
+        "body": "<del>${1:deleted text}</del>",
+        "description": "HTML deleted text element",
+        "scope": "text.html"
+    },
+    "html_ins": {
+        "prefix": "ahins",
+        "body": "<ins>${1:inserted text}</ins>",
+        "description": "HTML inserted text element",
+        "scope": "text.html"
+    },
+    "html_small": {
+        "prefix": "ahsmall",
+        "body": "<small>${1:small text}</small>",
+        "description": "HTML small text element",
+        "scope": "text.html"
+    },
+    "html_sub": {
+        "prefix": "ahsub",
+        "body": "<sub>${1:subscript text}</sub>",
+        "description": "HTML subscript element",
+        "scope": "text.html"
+    },
+    "html_sup": {
+        "prefix": "ahsup",
+        "body": "<sup>${1:superscript text}</sup>",
+        "description": "HTML superscript element",
+        "scope": "text.html"
+    },
+    "html_kbd": {
+        "prefix": "ahkbd",
+        "body": "<kbd>${1:keyboard input}</kbd>",
+        "description": "HTML keyboard input element",
+        "scope": "text.html"
+    },
+    "html_samp": {
+        "prefix": "ahsamp",
+        "body": "<samp>${1:sample output}</samp>",
+        "description": "HTML sample output element",
+        "scope": "text.html"
+    },
+    "html_var": {
+        "prefix": "ahvar",
+        "body": "<var>${1:variable name}</var>",
+        "description": "HTML variable element",
+        "scope": "text.html"
+    },
+    "html_dfn": {
+        "prefix": "ahdfn",
+        "body": "<dfn>${1:definition term}</dfn>",
+        "description": "HTML definition element",
+        "scope": "text.html"
+    },
+    "html_q": {
+        "prefix": "ahq",
+        "body": "<q cite=\"${1:url}\">${2:quoted text}</q>",
+        "description": "HTML inline quotation",
+        "scope": "text.html"
+    },
+    "html_ruby": {
+        "prefix": "ahruby",
+        "body": [
+            "<ruby>",
+            "\t${1:base text}",
+            "\t<rt>${2:ruby text}</rt>",
+            "</ruby>"
+        ],
+        "description": "HTML ruby annotation",
+        "scope": "text.html"
+    },
+    "html_bdi": {
+        "prefix": "ahbdi",
+        "body": "<bdi>${1:isolated text}</bdi>",
+        "description": "HTML bidirectional isolation",
+        "scope": "text.html"
+    },
+    "html_bdo": {
+        "prefix": "ahbdo",
+        "body": "<bdo dir=\"${1:rtl|ltr}\">${2:text}</bdo>",
+        "description": "HTML bidirectional override",
+        "scope": "text.html"
+    },
+    "html_wbr": {
+        "prefix": "ahwbr",
+        "body": "<wbr>",
+        "description": "HTML word break opportunity",
+        "scope": "text.html"
+    },
+    "html_meter": {
+        "prefix": "ahmeter",
+        "body": "<meter value=\"${1:0.6}\" min=\"${2:0}\" max=\"${3:1}\">${4:60%}</meter>",
+        "description": "HTML meter element",
+        "scope": "text.html"
+    },
+    "html_progress": {
+        "prefix": "ahprogress",
+        "body": "<progress value=\"${1:70}\" max=\"${2:100}\">${3:70%}</progress>",
+        "description": "HTML progress element",
+        "scope": "text.html"
+    },
+    "html_datalist": {
+        "prefix": "ahdatalist",
+        "body": [
+            "<datalist id=\"${1:list-id}\">",
+            "\t<option value=\"${2:option1}\">",
+            "\t<option value=\"${3:option2}\">",
+            "</datalist>"
+        ],
+        "description": "HTML datalist element",
+        "scope": "text.html"
+    },
+    "html_output": {
+        "prefix": "ahoutput",
+        "body": "<output name=\"${1:result}\" for=\"${2:input-id}\">${3:output text}</output>",
+        "description": "HTML output element",
+        "scope": "text.html"
     }
 } 
