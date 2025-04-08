@@ -3,7 +3,7 @@
         "prefix": "ahdoc",
         "body": "<!DOCTYPE html>",
         "description": "HTML5 doctype declaration",
-        "scope": "text.html"
+        "scope": "text.html,text.html.basic,text.python"
     },
     "html_boilerplate": {
         "prefix": "ahboiler",
