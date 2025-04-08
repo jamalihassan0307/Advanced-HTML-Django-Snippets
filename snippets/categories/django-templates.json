@@ -7,7 +7,7 @@
             "{% endblock %}"
         ],
         "description": "Django template block",
-        "scope": "text.html.django"
+        "scope": "text.html.django,text.python"
     },
     "django_static": {
         "prefix": "adstatic",
