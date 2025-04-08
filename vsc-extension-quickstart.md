@@ -1,5 +1,5 @@
 # Getting Started with Django HTML Snippets
-Version: 1.0.9
+Version: 1.1.0
 
 ## What's in the Extension
 
@@ -122,6 +122,6 @@ Version: 1.0.9
 
 ## Support
 
-* [Report Issues](https://github.com/yourusername/django-html-snippets/issues)
-* [Feature Requests](https://github.com/yourusername/django-html-snippets/issues/new)
-* [Documentation](https://github.com/yourusername/django-html-snippets/wiki)
+* [Report Issues](https://github.com/jamalihassan0307/django-html-snippets/issues)
+* [Feature Requests](https://github.com/jamalihassan0307/django-html-snippets/issues/new)
+* [Documentation](https://github.com/jamalihassan0307/django-html-snippets/wiki)
