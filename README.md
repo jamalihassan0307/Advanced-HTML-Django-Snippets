@@ -1,5 +1,5 @@
 # Django HTML Snippets for VS Code
-Version: 1.0.9
+Version: 1.1.0
 
 A collection of useful Django template and Python snippets for Visual Studio Code. These snippets are designed to speed up Django development by providing commonly used code patterns.
 
@@ -167,6 +167,6 @@ This extension is licensed under the MIT License.
 ## Support
 
 Need help? Check out:
-- [Documentation](https://github.com/yourusername/django-html-snippets/wiki)
-- [Issue Tracker](https://github.com/yourusername/django-html-snippets/issues)
-- [Discussions](https://github.com/yourusername/django-html-snippets/discussions)
+- [Documentation](https://github.com/jamalihassan0307/django-html-snippets/wiki)
+- [Issue Tracker](https://github.com/jamalihassan0307/django-html-snippets/issues)
+- [Discussions](https://github.com/jamalihassan0307/django-html-snippets/discussions)
